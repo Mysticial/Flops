@@ -19,11 +19,11 @@ How to Compile:
 
 **Windows - Visual Studio:**
  - Launch the VS build environment.
- - Run `compile_windows_cl.cmd` from the directly it is in. (or just double-click it)
+ - Run `compile_windows_cl.cmd` from the directory it is in. (or just double-click it)
 
 **Windows - Intel Compiler**
  - Launch the ICC build environment.
- - Run `compile_windows_icc.cmd` from the directly it is in. (or just double-click it)
+ - Run `compile_windows_icc.cmd` from the directory it is in. (or just double-click it)
  - *(Note that ICC will not build the FMA4 code-paths.)*
 
 **Linux - GCC**
