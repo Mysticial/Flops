@@ -3,7 +3,7 @@ Flops
 
 How many FLOPS can you achieve?
 
-This is the project referenced from: [How to achieve 4 flops per cycle](http://stackoverflow.com/a/8391601/922184)
+This is the project referenced from: [How to achieve 4 flops per cycle](http://stackoverflow.com/q/8389648/922184)
 
 The goal of this project is to get as many flops (floating-point operations per second) as possible from an x64 processor.
 
