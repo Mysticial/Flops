@@ -1,4 +1,4 @@
- - Intel Core i7 920 @ 3.5 GHz (overclock)
+ - **Intel Core i7 920 @ 3.5 GHz (overclock)**
  - Windows 7 Ultimate x64
  - Visual Studio 2010 SP1 - x64 Release
 
@@ -14,7 +14,7 @@ Actual SSE Peak: **51.3 GFlops**
 
 -----
 
- - 2 x Intel Xeon X5482 Harpertown @ 3.2 GHz
+ - **2 x Intel Xeon X5482 Harpertown @ 3.2 GHz**
  - Ubuntu Linux 10 x64
  - GCC 4.5.2 x64 - (-O2 -msse3 -fopenmp)
 
@@ -30,7 +30,7 @@ Actual SSE Peak: **97.9 GFlops**
 
 -----
 
- - Intel Core i7 2600K @ 4.4 GHz (overclock)
+ - **Intel Core i7 2600K @ 4.4 GHz (overclock)**
  - Windows 7 Ultimate x64
  - Visual Studio 2010 SP1 - x64 Release
 
@@ -46,7 +46,7 @@ Actual SSE Peak: **138.2 GFlops**
 
 -----
 
- - Intel Core i7 4770K @ 4.0 GHz (overclock)
+ - **Intel Core i7 4770K @ 4.0 GHz (overclock)**
  - Windows 7 Ultimate x64
  - Visual Studio 2012 - x64 Release
 
