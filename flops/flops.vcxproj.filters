@@ -44,5 +44,8 @@
     <ClInclude Include="..\source\flops_SSE2.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\flops_FMA3.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

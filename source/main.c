@@ -32,12 +32,19 @@
 #ifdef x86_SSE2
 #include "flops_SSE2.h"
 #endif
+
 #ifdef x86_AVX
 #include "flops_AVX.h"
 #endif
+
 #ifdef x86_FMA4
 #include "flops_AVX.h"
 #include "flops_FMA4.h"
+#endif
+
+#ifdef x86_FMA3
+#include "flops_AVX.h"
+#include "flops_FMA3.h"
 #endif
 
 #include "tools.h"
@@ -59,6 +66,12 @@ void run_flops(int threads,size_t iterations){
     test_dp_mul_AVX(threads,iterations);
     test_dp_mac_AVX(threads,iterations);
     test_dp_fma_FMA4(threads,iterations);
+#endif
+#ifdef x86_FMA3
+    test_dp_add_AVX(threads,iterations);
+    test_dp_mul_AVX(threads,iterations);
+    test_dp_mac_AVX(threads,iterations);
+    test_dp_fma_FMA3(threads,iterations);
 #endif
 }
 

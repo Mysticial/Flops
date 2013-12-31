@@ -1,8 +1,8 @@
-/* flops_FMA4.h - FMA4 Benchmarks
+/* flops_FMA3.h - FMA3 Benchmarks
  * 
  * Author           : Alexander J. Yee
- * Date Created     : 01/24/2012
- * Last Modified    : 01/25/2012
+ * Date Created     : 12/30/2013
+ * Last Modified    : 12/30/2013
  * 
  * 
  * 
@@ -26,8 +26,8 @@
  *  damage that may unintentionally be caused through its use.
  */
 
-#ifndef _FMA4_h
-#define _FMA4_h
+#ifndef _FMA3_h
+#define _FMA3_h
 #include <immintrin.h>
 #include <ammintrin.h>
 
@@ -44,7 +44,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-double test_dp_fma_FMA4_internal(double x,double y,size_t iterations){
+double test_dp_fma_FMA3_internal(double x,double y,size_t iterations){
     register __m256d r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB,rC,rD,rE,rF;
 
     r0 = _mm256_set1_pd(x);
@@ -76,76 +76,60 @@ double test_dp_fma_FMA4_internal(double x,double y,size_t iterations){
     while (c < iterations){
         size_t i = 0;
         while (i < 1000){
-            r0 = _mm256_macc_pd(r0,rC,rD);
-            r1 = _mm256_macc_pd(r1,rC,rD);
-            r2 = _mm256_macc_pd(r2,rC,rD);
-            r3 = _mm256_macc_pd(r3,rC,rD);
-            r4 = _mm256_macc_pd(r3,rC,rD);
-            r5 = _mm256_macc_pd(r4,rC,rD);
-            r6 = _mm256_macc_pd(r5,rC,rD);
-            r7 = _mm256_macc_pd(r7,rC,rD);
-            r8 = _mm256_macc_pd(r8,rC,rD);
-            r9 = _mm256_macc_pd(r9,rC,rD);
-            rA = _mm256_macc_pd(rA,rC,rD);
-            rB = _mm256_macc_pd(rB,rC,rD);
+            r0 = _mm256_fmadd_pd(r0,rC,rD);
+            r1 = _mm256_fmadd_pd(r1,rC,rD);
+            r2 = _mm256_fmadd_pd(r2,rC,rD);
+            r3 = _mm256_fmadd_pd(r3,rC,rD);
+            r4 = _mm256_fmadd_pd(r3,rC,rD);
+            r5 = _mm256_fmadd_pd(r4,rC,rD);
+            r6 = _mm256_fmadd_pd(r5,rC,rD);
+            r7 = _mm256_fmadd_pd(r7,rC,rD);
+            r8 = _mm256_fmadd_pd(r8,rC,rD);
+            r9 = _mm256_fmadd_pd(r9,rC,rD);
+            rA = _mm256_fmadd_pd(rA,rC,rD);
+            rB = _mm256_fmadd_pd(rB,rC,rD);
 
-            r0 = _mm256_macc_pd(r0,rD,rF);
-            r1 = _mm256_macc_pd(r1,rD,rF);
-            r2 = _mm256_macc_pd(r2,rD,rF);
-            r3 = _mm256_macc_pd(r3,rD,rF);
-            r4 = _mm256_macc_pd(r4,rD,rF);
-            r5 = _mm256_macc_pd(r5,rD,rF);
-            r6 = _mm256_macc_pd(r6,rD,rF);
-            r7 = _mm256_macc_pd(r7,rD,rF);
-            r8 = _mm256_macc_pd(r8,rD,rF);
-            r9 = _mm256_macc_pd(r9,rD,rF);
-            rA = _mm256_macc_pd(rA,rD,rF);
-            rB = _mm256_macc_pd(rB,rD,rF);
+            r0 = _mm256_fmadd_pd(r0,rD,rF);
+            r1 = _mm256_fmadd_pd(r1,rD,rF);
+            r2 = _mm256_fmadd_pd(r2,rD,rF);
+            r3 = _mm256_fmadd_pd(r3,rD,rF);
+            r4 = _mm256_fmadd_pd(r4,rD,rF);
+            r5 = _mm256_fmadd_pd(r5,rD,rF);
+            r6 = _mm256_fmadd_pd(r6,rD,rF);
+            r7 = _mm256_fmadd_pd(r7,rD,rF);
+            r8 = _mm256_fmadd_pd(r8,rD,rF);
+            r9 = _mm256_fmadd_pd(r9,rD,rF);
+            rA = _mm256_fmadd_pd(rA,rD,rF);
+            rB = _mm256_fmadd_pd(rB,rD,rF);
 
+            r0 = _mm256_fmadd_pd(r0,rC,rD);
+            r1 = _mm256_fmadd_pd(r1,rC,rD);
+            r2 = _mm256_fmadd_pd(r2,rC,rD);
+            r3 = _mm256_fmadd_pd(r3,rC,rD);
+            r4 = _mm256_fmadd_pd(r3,rC,rD);
+            r5 = _mm256_fmadd_pd(r4,rC,rD);
+            r6 = _mm256_fmadd_pd(r5,rC,rD);
+            r7 = _mm256_fmadd_pd(r7,rC,rD);
+            r8 = _mm256_fmadd_pd(r8,rC,rD);
+            r9 = _mm256_fmadd_pd(r9,rC,rD);
+            rA = _mm256_fmadd_pd(rA,rC,rD);
+            rB = _mm256_fmadd_pd(rB,rC,rD);
 
-            //r0 = _mm256_macc_pd(r0,rC,rD);
-            //r1 = _mm256_msub_pd(r1,rC,rD);
-            //r2 = _mm256_macc_pd(r2,rD,rC);
-            //r3 = _mm256_msub_pd(r3,rD,rC);
-            //r4 = _mm256_macc_pd(r4,rC,rD);
-            //r5 = _mm256_msub_pd(r5,rC,rD);
-            //r6 = _mm256_macc_pd(r6,rD,rC);
-            //r7 = _mm256_msub_pd(r7,rD,rC);
-            //r8 = _mm256_macc_pd(r8,rC,rD);
-            //r9 = _mm256_msub_pd(r9,rC,rD);
-            //rA = _mm256_macc_pd(rA,rD,rC);
-            //rB = _mm256_msub_pd(rB,rD,rC);
-            //
-            //r0 = _mm256_msub_pd(r0,rD,rF);
-            //r1 = _mm256_macc_pd(r1,rD,rF);
-            //r2 = _mm256_msub_pd(r2,rC,rE);
-            //r3 = _mm256_macc_pd(r3,rC,rE);
-            //r4 = _mm256_msub_pd(r4,rD,rF);
-            //r5 = _mm256_macc_pd(r5,rD,rF);
-            //r6 = _mm256_msub_pd(r6,rC,rE);
-            //r7 = _mm256_macc_pd(r7,rC,rE);
-            //r8 = _mm256_msub_pd(r8,rD,rF);
-            //r9 = _mm256_macc_pd(r9,rD,rF);
-            //rA = _mm256_msub_pd(rA,rC,rE);
-            //rB = _mm256_macc_pd(rB,rC,rE);
+            r0 = _mm256_fmadd_pd(r0,rD,rF);
+            r1 = _mm256_fmadd_pd(r1,rD,rF);
+            r2 = _mm256_fmadd_pd(r2,rD,rF);
+            r3 = _mm256_fmadd_pd(r3,rD,rF);
+            r4 = _mm256_fmadd_pd(r4,rD,rF);
+            r5 = _mm256_fmadd_pd(r5,rD,rF);
+            r6 = _mm256_fmadd_pd(r6,rD,rF);
+            r7 = _mm256_fmadd_pd(r7,rD,rF);
+            r8 = _mm256_fmadd_pd(r8,rD,rF);
+            r9 = _mm256_fmadd_pd(r9,rD,rF);
+            rA = _mm256_fmadd_pd(rA,rD,rF);
+            rB = _mm256_fmadd_pd(rB,rD,rF);
 
             i++;
         }
-
-        //print(r0);
-        //print(r1);
-        //print(r2);
-        //print(r3);
-        //print(r4);
-        //print(r5);
-        //print(r6);
-        //print(r7);
-        //print(r8);
-        //print(r9);
-        //print(rA);
-        //print(rB);
-        //cout << endl;
-        //system("pause");
 
         r0 = _mm256_and_pd(r0,MASK);
         r1 = _mm256_and_pd(r1,MASK);
@@ -205,20 +189,20 @@ double test_dp_fma_FMA4_internal(double x,double y,size_t iterations){
 
     return out;
 }
-void test_dp_fma_FMA4(int tds,size_t iterations){
+void test_dp_fma_FMA3(int tds,size_t iterations){
     
-    printf("Testing FMA4 FMA:\n");
+    printf("Testing FMA3 FMA:\n");
     double *sum = (double*)malloc(tds * sizeof(double));
     wclk start = wclk_now();
     
 #pragma omp parallel num_threads(tds)
     {
-        double ret = test_dp_fma_FMA4_internal(1.1,2.1,iterations);
+        double ret = test_dp_fma_FMA3_internal(1.1,2.1,iterations);
         sum[omp_get_thread_num()] = ret;
     }
 
     double secs = wclk_secs_since(start);
-    uint64 ops = 48 * 1000 * iterations * tds * 4;
+    uint64 ops = 96 * 1000 * iterations * tds * 4;
     printf("Seconds = %g\n",secs);
     printf("FP Ops  = %llu\n",(unsigned long long)ops);
     printf("FLOPs   = %g\n",ops / secs);
