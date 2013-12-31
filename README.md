@@ -19,11 +19,11 @@ How to Compile:
 
 **Windows - Visual Studio:**
  - Launch the VS build environment.
- - Run `compile_windows_cl.cmd` from the directory it is in. (or just double-click it)
+ - Run `compile_windows_cl.cmd` from the directory it is in.
 
 **Windows - Intel Compiler**
  - Launch the ICC build environment.
- - Run `compile_windows_icc.cmd` from the directory it is in. (or just double-click it)
+ - Run `compile_windows_icc.cmd` from the directory it is in.
  - *(Note that ICC will not build the FMA4 code-paths.)*
 
 **Linux - GCC**
@@ -36,4 +36,8 @@ A Visual Studio project has also been setup for users with MSVC 2012 or later.
 As of the current version, the project supports:
  - SSE2
  - AVX
- - FMA4 (AMD's flavor of the Fused-Multiply Add instruction set)
+ - FMA4* (AMD's flavor of the Fused-Multiply Add instruction set)
+ - FMA3 (Intel's flavor of the Fused-Multiply Add instruction set)
+
+*Note that this benchmark uses 256-bit FMA4. The performance of 256-bit SIMD is very slow on current AMD processors.
+
