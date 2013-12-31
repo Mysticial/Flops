@@ -1,4 +1,3 @@
-
  - Intel Core i7 920 @ 3.5 GHz (overclock)
  - Windows 7 Ultimate x64
  - Visual Studio 2010 SP1 - x64 Release
@@ -43,7 +42,7 @@ Actual SSE Peak: **138.2 GFlops**
 
  - Intel Core i7 4770K @ 4.0 GHz (overclock)
  - Windows 7 Ultimate x64
- - Visual Studio 2012 SP1 - x64 Release
+ - Visual Studio 2012 - x64 Release
 
 Seconds = 126.147
 FP Ops  = 30720000000000
