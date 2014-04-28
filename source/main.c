@@ -87,6 +87,9 @@ int main(){
 
     run_flops(threads,iterations);
 
+#ifdef WIN32
     int ret = system("pause");
+#endif
+
     return 0;
 }
