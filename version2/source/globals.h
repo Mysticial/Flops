@@ -9,7 +9,7 @@ using std::endl;
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 #include <stdint.h>
-//#include <time.h>
+#include <string.h>
 #include <omp.h>
 #include <memory>
 #include "tools.h"
@@ -47,10 +47,8 @@ public:
         print_meta();
 
         double result;
-//        clock_t start = clock();
         wclk start = wclk_now();
         iterations = run_loop(iterations,result);
-//        double seconds = (double)(clock() - start) / CLOCKS_PER_SEC;
         double seconds = wclk_secs_since(start);
 
         cout << "    Result     = " << result << endl;
@@ -67,7 +65,6 @@ public:
         memset(thread_result.get()    ,0,threads * sizeof(double));
         memset(thread_iterations.get(),0,threads * sizeof(largeint_t));
 
-//        clock_t start = clock();
         wclk start = wclk_now();
 #pragma omp parallel num_threads((int)threads)
         {
@@ -77,7 +74,6 @@ public:
             thread_iterations[thread_id] = run_loop(iterations,result);
             thread_result[thread_id] = result;
         }
-//        double seconds = (double)(clock() - start) / CLOCKS_PER_SEC;
         double seconds = wclk_secs_since(start);
 
         double result = 0;

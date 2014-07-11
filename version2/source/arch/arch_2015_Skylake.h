@@ -9,6 +9,10 @@
  *  are not yet tuned.
  */
 
+#ifndef _WIN32
+#include <x86intrin.h>
+#endif
+
 //  128-bit
 #include "../bench_128/bench_f32v2_SSE.h"
 #include "../bench_128/bench_f64v1_SSE2.h"
