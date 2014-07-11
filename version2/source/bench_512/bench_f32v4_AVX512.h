@@ -2,7 +2,7 @@
  * 
  * Author           : Alexander J. Yee
  * Date Created     : 07/10/2014
- * Last Modified    : 07/10/2014
+ * Last Modified    : 07/11/2014
  * 
  *      f32     =   Single Precision
  *      v4      =   Vectorize by 16
@@ -25,6 +25,7 @@
 #include "../macros/macro_add.h"
 #include "../macros/macro_mul.h"
 #include "../macros/macro_mac.h"
+#include "../macros/macro_fma.h"
 namespace flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
