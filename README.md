@@ -11,33 +11,22 @@ Modern x86 and x64 processors can theoretically reach a performance on the order
 However, this can only be achieved through the use of SIMD and very careful programming.
 Therefore very few (even numerical) programs can achieve even a small fraction of the theoretical compute power of a modern processor.
 
-This project shows how to achieve >95% of that theoretical performance on some of the current processors of 2010 - 2013.
+This project shows how to achieve >95% of that theoretical performance on some of the current processors of 2010 - 2014.
 
 -----
 
-How to Compile:
+Version 2 is coming soon...
 
-**Windows - Visual Studio:**
- - Launch the VS build environment.
- - Run `compile_windows_cl.cmd` from the directory it is in.
 
-**Windows - Intel Compiler**
- - Launch the ICC build environment.
- - Run `compile_windows_icc.cmd` from the directory it is in.
- - *(Note that ICC will not build the FMA4 code-paths.)*
+New Features:
+ - Single and Double precision benchmarks.
+ - 128-bit and 256-bit FMA
 
-**Linux - GCC**
- - Run `compile_linux_gcc.sh`.
-
-A Visual Studio project has also been setup for users with MSVC 2012 or later.
-
------
-
-As of the current version, the project supports:
- - SSE2
- - AVX
- - FMA4* (AMD's flavor of the Fused-Multiply Add instruction set)
- - FMA3 (Intel's flavor of the Fused-Multiply Add instruction set)
-
-*Note that this benchmark uses 256-bit FMA4. The performance of 256-bit SIMD is very slow on current AMD processors.
+Binaries will target processors instead of instruction sets:
+ - Core 2 (SSE2)
+ - Sandy Bridge (AVX)
+ - Bulldozer (AVX + FMA4)
+ - Piledriver (AVX + FMA3 + FMA4)
+ - Haswell (AVX + FMA3)
+ - Skylake (AVX512)
 
