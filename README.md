@@ -31,7 +31,7 @@ Binaries will target processors instead of instruction sets:
 
 -----
 
-How to Compile:
+How to Compile: (version 2)
 
 Windows:
  1. Have Visual Studio 2013 installed at the default path.
@@ -42,7 +42,7 @@ Linux:
 
 Precompiled binaries can be found in:
  - `Flops - Windows/`
- - `Flops - Linux`
+ - `Flops - Linux/`
 
 -----
 
