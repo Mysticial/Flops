@@ -15,29 +15,13 @@ This project shows how to achieve >95% of that theoretical performance on some o
 
 -----
 
-Version 2 is work in progress...
+**How to Compile: (version 2)**
 
-New Features:
- - Single and Double precision benchmarks.
- - 128-bit and 256-bit FMA
-
-Binaries will target processors instead of instruction sets:
- - Core 2 (SSE2)
- - Sandy Bridge (AVX)
- - Bulldozer (AVX + FMA4)
- - Piledriver (AVX + FMA3 + FMA4)
- - Haswell (AVX + FMA3)
- - Skylake (AVX512)
-
------
-
-How to Compile: (version 2)
-
-Windows:
+**Windows:**
  1. Have Visual Studio 2013 installed at the default path.
  2. Run (or double-click) on `compile_windows_vsc.cmd`.
 
-Linux:
+**Linux:**
  1. Run `compile_linux_gcc.sh`.
 
 Precompiled binaries can be found in:
