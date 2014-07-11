@@ -31,18 +31,22 @@ Binaries will target processors instead of instruction sets:
 
 -----
 
-Version 2 Pre-Release To-Do List:
- - Move old version into a new folder. **Done**
- - Implement back-end subroutines. **Done**
- - Implement the Windows CPU dispatcher.
- - Write the Windows build scripts.
- - Port the back-end to Linux.
- - Port the CPU dispatcher to Linux.
- - Write the Linux build scripts.
+How to Compile:
+
+Windows:
+ 1. Have Visual Studio 2013 installed at the default path.
+ 2. Run (or double-click) on `compile_windows_vsc.cmd`.
+
+Linux:
+ 1. Run `compile_linux_gcc.sh`.
+
+Precompiled binaries can be found in:
+ - `Flops - Windows/`
+ - `Flops - Linux`
 
 -----
 
-And of course... The typical copyright stuff...
+The usual copyright stuff...
 
 Redistribution of this program in both source or binary, regardless of
 form, with or without modification is permitted as long as the following
