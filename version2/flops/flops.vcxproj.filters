@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\macros">
+      <UniqueIdentifier>{d08a4dd4-588f-416a-a758-d640ae8e3ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arch">
+      <UniqueIdentifier>{0bafaaf8-2ffc-4f70-b49c-f28cf7ceeadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bench_128">
+      <UniqueIdentifier>{26fde912-0152-468b-aeb8-9958a44cf2e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bench_256">
+      <UniqueIdentifier>{d3c14cbc-2940-49d9-8c2e-88b588c4bd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bench_512">
+      <UniqueIdentifier>{290d8fef-22de-4385-ba80-e93fa6502f72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\macros\macro_fma.h">
+      <Filter>Header Files\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\macros\macro_mac.h">
+      <Filter>Header Files\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\macros\macro_mul.h">
+      <Filter>Header Files\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\macros\macro_reduce.h">
+      <Filter>Header Files\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\macros\macro_add.h">
+      <Filter>Header Files\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2006_Core2.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2011_SandyBridge.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2011_Bulldozer.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2013_Haswell.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f32v2_FMA3.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f32v2_FMA4.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f32v2_SSE.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f64v1_FMA3.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f64v1_FMA4.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\bench_f64v1_SSE2.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f32v3_AVX.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f32v3_FMA4.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f64v2_AVX.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f64v2_FMA4.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f32v3_FMA3.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\bench_f64v2_FMA3.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2012_Piledriver.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2015_Skylake.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_512\bench_f32v4_AVX512.h">
+      <Filter>Header Files\bench_512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_512\bench_f64v3_AVX512.h">
+      <Filter>Header Files\bench_512</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

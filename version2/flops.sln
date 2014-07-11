@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "flops", "flops\flops.vcxproj", "{23CC5708-F78A-4471-9788-6E21F9B1D3EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bulldozer|Win32 = Bulldozer|Win32
+		Bulldozer|x64 = Bulldozer|x64
+		Core2|Win32 = Core2|Win32
+		Core2|x64 = Core2|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Haswell|Win32 = Haswell|Win32
+		Haswell|x64 = Haswell|x64
+		Piledriver|Win32 = Piledriver|Win32
+		Piledriver|x64 = Piledriver|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		SandyBridge|Win32 = SandyBridge|Win32
+		SandyBridge|x64 = SandyBridge|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Bulldozer|Win32.ActiveCfg = Bulldozer|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Bulldozer|Win32.Build.0 = Bulldozer|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Bulldozer|x64.ActiveCfg = Bulldozer|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Bulldozer|x64.Build.0 = Bulldozer|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Core2|Win32.ActiveCfg = Core2|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Core2|Win32.Build.0 = Core2|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Core2|x64.ActiveCfg = Core2|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Core2|x64.Build.0 = Core2|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Debug|Win32.Build.0 = Debug|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Debug|x64.ActiveCfg = Debug|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Debug|x64.Build.0 = Debug|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Haswell|Win32.ActiveCfg = Haswell|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Haswell|Win32.Build.0 = Haswell|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Haswell|x64.ActiveCfg = Haswell|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Haswell|x64.Build.0 = Haswell|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Piledriver|Win32.ActiveCfg = Piledriver|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Piledriver|Win32.Build.0 = Piledriver|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Piledriver|x64.ActiveCfg = Piledriver|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Piledriver|x64.Build.0 = Piledriver|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Release|Win32.ActiveCfg = Release|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Release|Win32.Build.0 = Release|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Release|x64.ActiveCfg = Release|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.Release|x64.Build.0 = Release|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.SandyBridge|Win32.ActiveCfg = SandyBridge|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.SandyBridge|Win32.Build.0 = SandyBridge|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.SandyBridge|x64.ActiveCfg = SandyBridge|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.SandyBridge|x64.Build.0 = SandyBridge|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
