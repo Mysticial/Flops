@@ -15,6 +15,32 @@ This project shows how to achieve >95% of that theoretical performance on some o
 
 -----
 
+Here is a list of recommended binaries for each processor line.
+
+ - `x64-Core2`
+    - Intel Core 2 (2006)
+    - Intel Nehalem (2008)
+    - Intel Westmere (2010)
+
+ - `x64-SandyBridge`
+    - Intel Sandy Bridge (2011)
+    - Intel Ivy Bridge (2012)
+
+ - `x64-Bulldozer`
+    - AMD Bulldozer (2011)
+
+ - `x64-Piledriver`
+    - AMD Piledriver (2012)
+    - AMD Steamroller (2014)
+
+ - `x64-Haswell`
+    - Intel Haswell (2013)
+    - Intel Broadwell (2014)
+
+x64 is strongly recommended, but not required. The benchmark is optimized for 16 SIMD registers and may not compile well on x86.
+
+-----
+
 **How to Compile: (version 2)**
 
 **Windows:**
@@ -25,8 +51,8 @@ This project shows how to achieve >95% of that theoretical performance on some o
  1. Run `compile_linux_gcc.sh`.
 
 Precompiled binaries can be found in:
- - `Flops - Windows/`
- - `Flops - Linux/`
+ - `binaries-windows/`
+ - `binaries-linux/`
 
 -----
 
