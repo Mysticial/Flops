@@ -1,7 +1,6 @@
-mkdir "Flops - Linux" #
-mkdir "Flops - Linux/Binaries" #
+mkdir "binaries-linux" #
 #
-basepath="Flops - Linux/Binaries/x64_" #
+basepath="binaries-linux/x64-" #
 flags="-std=c++0x -static -fopenmp -O2" #
 #
 g++ source/*.c source/*.cpp -o "${basepath}Core2.out"       $flags -march=core2      -D "ArchCore2" #
