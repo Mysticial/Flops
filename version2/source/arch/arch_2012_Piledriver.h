@@ -29,7 +29,7 @@
 namespace flops{
 
     void run_benchmark(largeint_t iterations,size_t threads){
-        cout << "Running Benchmarks for AMD Bulldozer..." << endl;
+        cout << "Running Benchmarks for AMD Piledriver..." << endl;
         cout << endl;
 
         //  128-bit
