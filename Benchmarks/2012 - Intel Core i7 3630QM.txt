@@ -1,0 +1,94 @@
+Intel Core i7 3630QM
+Frequency: 3.1923 GHz
+
+Benchmarks appear to be affected by CPU throttling down to 2.4 GHz.
+
+-----
+
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 10.2812
+    GFlops     = 49.7998
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 20.4801
+    GFlops     = 49.9998
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 15.4024
+    GFlops     = 99.725
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 10.2556
+    GFlops     = 24.9619
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 20.4824
+    GFlops     = 24.997
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 15.4265
+    GFlops     = 49.7846
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 10.2315
+    GFlops     = 100.083
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 20.479
+    GFlops     = 100.005
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 18.522
+    GFlops     = 165.857
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 10.518
+    GFlops     = 48.6784
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 20.5131
+    GFlops     = 49.9194
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.8699
+    GFlops     = 77.3029
+
+Press any key to continue . . .
