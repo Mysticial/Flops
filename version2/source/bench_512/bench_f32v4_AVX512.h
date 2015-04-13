@@ -58,7 +58,7 @@ class bench_add_f32v4_AVX512_chains4 : public benchmark{
             );
         }
         flops_reduce_chains4(
-            _mm512_512_ps,
+            _mm512_add_ps,
             r0,r1,r2,r3
         );
         result = reduce_f32v4_AVX512(r0);
