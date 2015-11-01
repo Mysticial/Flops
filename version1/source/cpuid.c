@@ -37,8 +37,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifdef WIN32
 #else
-void cpuid(int *info,int x){
-    int ax,bx,cx,dx;
+void cpuid(int *info, int x){
+    int ax, bx, cx, dx;
 
     __asm__ __volatile__ ("cpuid": "=a" (ax), "=b" (bx), "=c" (cx), "=d" (dx) : "a" (x));
 
@@ -54,13 +54,13 @@ void cpuid(int *info,int x){
 ////////////////////////////////////////////////////////////////////////////////
 void cpuid_print_name(){
     int name[13];
-    cpuid(name + 0,0x80000002);
-    cpuid(name + 4,0x80000003);
-    cpuid(name + 8,0x80000004);
+    cpuid(name + 0, 0x80000002);
+    cpuid(name + 4, 0x80000003);
+    cpuid(name + 8, 0x80000004);
     name[12] = '\0';
 
-    printf("CPU Name = %s\n",(char*)name);
-    printf("Threads  = %d\n",omp_get_max_threads());
+    printf("CPU Name = %s\n", (char*)name);
+    printf("Threads  = %d\n", omp_get_max_threads());
     printf("\n");
 }
 void cpuid_print_exts(){
@@ -87,7 +87,7 @@ void cpuid_print_exts(){
 
     //  Detect Instruction Set
     if (nIds >= 1){
-        cpuid(info,0x00000001);
+        cpuid(info, 0x00000001);
         MMX   = (info[3] & ((int)1 << 23)) != 0;
         SSE   = (info[3] & ((int)1 << 25)) != 0;
         SSE2  = (info[3] & ((int)1 << 26)) != 0;
@@ -102,7 +102,7 @@ void cpuid_print_exts(){
     }
 
     if (nExIds >= 0x80000001){
-        cpuid(info,0x80000001);
+        cpuid(info, 0x80000001);
         x64   = (info[3] & ((int)1 << 29)) != 0;
         SSE4a = (info[2] & ((int)1 <<  6)) != 0;
         FMA4  = (info[2] & ((int)1 << 16)) != 0;
@@ -110,19 +110,19 @@ void cpuid_print_exts(){
     }
 
     printf("Hardware Features:\n");
-    printf("x64   = %d\n",x64);
-    printf("MMX   = %d\n",MMX);
-    printf("SSE   = %d\n",SSE);
-    printf("SSE2  = %d\n",SSE2);
-    printf("SSE3  = %d\n",SSE3);
-    printf("SSSE3 = %d\n",SSSE3);
-    printf("SSE4a = %d\n",SSE4a);
-    printf("SSE41 = %d\n",SSE41);
-    printf("SSE42 = %d\n",SSE42);
-    printf("AVX   = %d\n",AVX);
-    printf("FMA3  = %d\n",FMA3);
-    printf("FMA4  = %d\n",FMA4);
-    printf("XOP   = %d\n",XOP);
+    printf("x64   = %d\n", x64);
+    printf("MMX   = %d\n", MMX);
+    printf("SSE   = %d\n", SSE);
+    printf("SSE2  = %d\n", SSE2);
+    printf("SSE3  = %d\n", SSE3);
+    printf("SSSE3 = %d\n", SSSE3);
+    printf("SSE4a = %d\n", SSE4a);
+    printf("SSE41 = %d\n", SSE41);
+    printf("SSE42 = %d\n", SSE42);
+    printf("AVX   = %d\n", AVX);
+    printf("FMA3  = %d\n", FMA3);
+    printf("FMA4  = %d\n", FMA4);
+    printf("XOP   = %d\n", XOP);
     printf("\n");
 }
 ////////////////////////////////////////////////////////////////////////////////

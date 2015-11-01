@@ -30,7 +30,7 @@ class bench_fma_linear_f64v1_FMA4_chains12 : public benchmark{
         cout << "Double-Precision - 128-bit FMA4 - Fused Multiply Add:" << endl;
         cout << "    Dependency Chains = 12" << endl;
     }
-    virtual largeint_t run_loop(largeint_t iterations,double &result) const{
+    virtual largeint_t run_loop(largeint_t iterations, double &result) const{
         const __m128d mul0 = _mm_set1_pd(TEST_FMA_LINEAR_MUL0);
         const __m128d mul1 = _mm_set1_pd(TEST_FMA_LINEAR_MUL1);
 
@@ -48,14 +48,14 @@ class bench_fma_linear_f64v1_FMA4_chains12 : public benchmark{
         __m128d rB = _mm_set1_pd(2.1f);
         for (size_t i = 0; i < iterations; i++){
             flops_fma_linear_chains12_unroll2_ops48(
-                _mm_macc_pd,_mm_nmacc_pd,
-                mul0,mul1,
-                r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB
+                _mm_macc_pd, _mm_nmacc_pd,
+                mul0, mul1,
+                r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
             );
         }
         flops_reduce_chains12(
             _mm_add_pd,
-            r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB
+            r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
         result = reduce_f64v1_SSE2(r0);
 

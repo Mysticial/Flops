@@ -40,7 +40,7 @@ const double TEST_FMA_HORNER_ADD1   =   -1.2247448713915890491;
 ////////////////////////////////////////////////////////////////////////////////
 class benchmark{
     virtual void print_meta() const = 0;
-    virtual largeint_t run_loop(largeint_t iterations,double &result) const = 0;
+    virtual largeint_t run_loop(largeint_t iterations, double &result) const = 0;
 
 public:
     void run(largeint_t iterations) const{
@@ -48,7 +48,7 @@ public:
 
         double result;
         wclk start = wclk_now();
-        iterations = run_loop(iterations,result);
+        iterations = run_loop(iterations, result);
         double seconds = wclk_secs_since(start);
 
         cout << "    Result     = " << result << endl;
@@ -57,13 +57,13 @@ public:
         cout << "    GFlops     = " << iterations / seconds / 1.e9 << endl;
         cout << endl;
     }
-    void run(largeint_t iterations,size_t threads) const{
+    void run(largeint_t iterations, size_t threads) const{
         print_meta();
 
         auto thread_result     = std::unique_ptr<double[]>(new double[threads]);
         auto thread_iterations = std::unique_ptr<largeint_t[]>(new largeint_t[threads]);
-        memset(thread_result.get()    ,0,threads * sizeof(double));
-        memset(thread_iterations.get(),0,threads * sizeof(largeint_t));
+        memset(thread_result.get()    , 0, threads * sizeof(double));
+        memset(thread_iterations.get(), 0, threads * sizeof(largeint_t));
 
         wclk start = wclk_now();
 #pragma omp parallel num_threads((int)threads)
@@ -71,7 +71,7 @@ public:
             size_t thread_id = omp_get_thread_num();
 
             double result;
-            thread_iterations[thread_id] = run_loop(iterations,result);
+            thread_iterations[thread_id] = run_loop(iterations, result);
             thread_result[thread_id] = result;
         }
         double seconds = wclk_secs_since(start);

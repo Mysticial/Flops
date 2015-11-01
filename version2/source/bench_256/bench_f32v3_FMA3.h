@@ -29,7 +29,7 @@ class bench_fma_linear_f32v3_FMA3_chains12 : public benchmark{
         cout << "Single-Precision - 256-bit FMA3 - Fused Multiply Add:" << endl;
         cout << "    Dependency Chains = 12" << endl;
     }
-    virtual largeint_t run_loop(largeint_t iterations,double &result) const{
+    virtual largeint_t run_loop(largeint_t iterations, double &result) const{
         const __m256 mul0 = _mm256_set1_ps((float)TEST_FMA_LINEAR_MUL0);
         const __m256 mul1 = _mm256_set1_ps((float)TEST_FMA_LINEAR_MUL1);
 
@@ -47,14 +47,14 @@ class bench_fma_linear_f32v3_FMA3_chains12 : public benchmark{
         __m256 rB = _mm256_set1_ps(2.1f);
         for (size_t i = 0; i < iterations; i++){
             flops_fma_linear_chains12_unroll2_ops48(
-                _mm256_fmadd_ps,_mm256_fnmadd_ps,
-                mul0,mul1,
-                r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB
+                _mm256_fmadd_ps, _mm256_fnmadd_ps,
+                mul0, mul1,
+                r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
             );
         }
         flops_reduce_chains12(
             _mm256_add_ps,
-            r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB
+            r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
         result = reduce_f32v3_AVX(r0);
 

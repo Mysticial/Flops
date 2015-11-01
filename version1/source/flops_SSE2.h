@@ -34,8 +34,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
-    register __m128d r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB;
+double test_dp_add_SSE2_internal(double x, double y, size_t iterations){
+    register __m128d r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB;
 
     r0 = _mm_set1_pd(x);
     r1 = _mm_set1_pd(y);
@@ -43,14 +43,14 @@ double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
     r8 = _mm_set1_pd(-0.0);
     r9 = _mm_set1_pd(0.5);
 
-    r2 = _mm_xor_pd(r0,r8);
-    r3 = _mm_or_pd(r0,r8);
-    r4 = _mm_andnot_pd(r8,r0);
-    r5 = _mm_mul_pd(r1,r9);
-    r6 = _mm_add_pd(r1,r9);
-    r7 = _mm_sub_pd(r1,r9);
-    r8 = _mm_add_pd(r0,_mm_set1_pd(2.3));
-    r9 = _mm_sub_pd(r1,_mm_set1_pd(2.3));
+    r2 = _mm_xor_pd(r0, r8);
+    r3 = _mm_or_pd(r0, r8);
+    r4 = _mm_andnot_pd(r8, r0);
+    r5 = _mm_mul_pd(r1, r9);
+    r6 = _mm_add_pd(r1, r9);
+    r7 = _mm_sub_pd(r1, r9);
+    r8 = _mm_add_pd(r0, _mm_set1_pd(2.3));
+    r9 = _mm_sub_pd(r1, _mm_set1_pd(2.3));
 
     uint64 iMASK = 0x800fffffffffffffull;
     __m128d MASK = _mm_set1_pd(*(double*)&iMASK);
@@ -65,42 +65,42 @@ double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
     while (c < iterations){
         size_t i = 0;
         while (i < 1000){
-            r0 = _mm_add_pd(r0,rA);
-            r1 = _mm_add_pd(r1,rA);
-            r2 = _mm_add_pd(r2,rA);
-            r3 = _mm_add_pd(r3,rA);
-            r4 = _mm_add_pd(r4,rA);
-            r5 = _mm_add_pd(r5,rA);
-            r6 = _mm_add_pd(r6,rA);
-            r7 = _mm_add_pd(r7,rA);
-            r8 = _mm_add_pd(r8,rA);
-            r9 = _mm_add_pd(r9,rA);
+            r0 = _mm_add_pd(r0, rA);
+            r1 = _mm_add_pd(r1, rA);
+            r2 = _mm_add_pd(r2, rA);
+            r3 = _mm_add_pd(r3, rA);
+            r4 = _mm_add_pd(r4, rA);
+            r5 = _mm_add_pd(r5, rA);
+            r6 = _mm_add_pd(r6, rA);
+            r7 = _mm_add_pd(r7, rA);
+            r8 = _mm_add_pd(r8, rA);
+            r9 = _mm_add_pd(r9, rA);
 
-            r0 = _mm_sub_pd(r0,rB);
-            r1 = _mm_sub_pd(r1,rB);
-            r2 = _mm_sub_pd(r2,rB);
-            r3 = _mm_sub_pd(r3,rB);
-            r4 = _mm_sub_pd(r4,rB);
-            r5 = _mm_sub_pd(r5,rB);
-            r6 = _mm_sub_pd(r6,rB);
-            r7 = _mm_sub_pd(r7,rB);
-            r8 = _mm_sub_pd(r8,rB);
-            r9 = _mm_sub_pd(r9,rB);
+            r0 = _mm_sub_pd(r0, rB);
+            r1 = _mm_sub_pd(r1, rB);
+            r2 = _mm_sub_pd(r2, rB);
+            r3 = _mm_sub_pd(r3, rB);
+            r4 = _mm_sub_pd(r4, rB);
+            r5 = _mm_sub_pd(r5, rB);
+            r6 = _mm_sub_pd(r6, rB);
+            r7 = _mm_sub_pd(r7, rB);
+            r8 = _mm_sub_pd(r8, rB);
+            r9 = _mm_sub_pd(r9, rB);
 
-            //r8 = _mm_add_pd(r0,r1);
-            //r9 = _mm_add_pd(r2,r3);
-            //rA = _mm_add_pd(r4,r5);
-            //rB = _mm_add_pd(r6,r7);
+            //r8 = _mm_add_pd(r0, r1);
+            //r9 = _mm_add_pd(r2, r3);
+            //rA = _mm_add_pd(r4, r5);
+            //rB = _mm_add_pd(r6, r7);
 
-            //r0 = _mm_sub_pd(r0,r4);
-            //r1 = _mm_sub_pd(r1,r5);
-            //r2 = _mm_sub_pd(r2,r6);
-            //r3 = _mm_sub_pd(r3,r7);
+            //r0 = _mm_sub_pd(r0, r4);
+            //r1 = _mm_sub_pd(r1, r5);
+            //r2 = _mm_sub_pd(r2, r6);
+            //r3 = _mm_sub_pd(r3, r7);
 
-            //r4 = _mm_add_pd(r4,r8);
-            //r5 = _mm_add_pd(r5,r9);
-            //r6 = _mm_add_pd(r6,rA);
-            //r7 = _mm_add_pd(r7,rB);
+            //r4 = _mm_add_pd(r4, r8);
+            //r5 = _mm_add_pd(r5, r9);
+            //r6 = _mm_add_pd(r6, rA);
+            //r7 = _mm_add_pd(r7, rB);
 
             i++;
         }
@@ -115,26 +115,26 @@ double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
         //print(r7);
         //cout << endl;
 
-        r0 = _mm_and_pd(r0,MASK);
-        r1 = _mm_and_pd(r1,MASK);
-        r2 = _mm_and_pd(r2,MASK);
-        r3 = _mm_and_pd(r3,MASK);
-        r4 = _mm_and_pd(r4,MASK);
-        r5 = _mm_and_pd(r5,MASK);
-        r6 = _mm_and_pd(r6,MASK);
-        r7 = _mm_and_pd(r7,MASK);
-        r8 = _mm_and_pd(r8,MASK);
-        r9 = _mm_and_pd(r9,MASK);
-        r0 = _mm_or_pd(r0,vONE);
-        r1 = _mm_or_pd(r1,vONE);
-        r2 = _mm_or_pd(r2,vONE);
-        r3 = _mm_or_pd(r3,vONE);
-        r4 = _mm_or_pd(r4,vONE);
-        r5 = _mm_or_pd(r5,vONE);
-        r6 = _mm_or_pd(r6,vONE);
-        r7 = _mm_or_pd(r7,vONE);
-        r8 = _mm_or_pd(r8,vONE);
-        r9 = _mm_or_pd(r9,vONE);
+        r0 = _mm_and_pd(r0, MASK);
+        r1 = _mm_and_pd(r1, MASK);
+        r2 = _mm_and_pd(r2, MASK);
+        r3 = _mm_and_pd(r3, MASK);
+        r4 = _mm_and_pd(r4, MASK);
+        r5 = _mm_and_pd(r5, MASK);
+        r6 = _mm_and_pd(r6, MASK);
+        r7 = _mm_and_pd(r7, MASK);
+        r8 = _mm_and_pd(r8, MASK);
+        r9 = _mm_and_pd(r9, MASK);
+        r0 = _mm_or_pd(r0, vONE);
+        r1 = _mm_or_pd(r1, vONE);
+        r2 = _mm_or_pd(r2, vONE);
+        r3 = _mm_or_pd(r3, vONE);
+        r4 = _mm_or_pd(r4, vONE);
+        r5 = _mm_or_pd(r5, vONE);
+        r6 = _mm_or_pd(r6, vONE);
+        r7 = _mm_or_pd(r7, vONE);
+        r8 = _mm_or_pd(r8, vONE);
+        r9 = _mm_or_pd(r9, vONE);
 
         c++;
     }
@@ -146,17 +146,17 @@ double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
 //    cout << "FP Ops  = " << ops << endl;
 //    cout << "FLOPs   = " << ops / secs << endl;
 
-    r0 = _mm_add_pd(r0,r1);
-    r2 = _mm_add_pd(r2,r3);
-    r4 = _mm_add_pd(r4,r5);
-    r6 = _mm_add_pd(r6,r7);
-    r8 = _mm_add_pd(r8,r9);
+    r0 = _mm_add_pd(r0, r1);
+    r2 = _mm_add_pd(r2, r3);
+    r4 = _mm_add_pd(r4, r5);
+    r6 = _mm_add_pd(r6, r7);
+    r8 = _mm_add_pd(r8, r9);
     
-    r0 = _mm_add_pd(r0,r2);
-    r4 = _mm_add_pd(r4,r6);
+    r0 = _mm_add_pd(r0, r2);
+    r4 = _mm_add_pd(r4, r6);
 
-    r0 = _mm_add_pd(r0,r4);
-    r0 = _mm_add_pd(r0,r8);
+    r0 = _mm_add_pd(r0, r4);
+    r0 = _mm_add_pd(r0, r8);
 
     double out = 0;
     __m128d tmp = r0;
@@ -165,7 +165,7 @@ double test_dp_add_SSE2_internal(double x,double y,size_t iterations){
 
     return out;
 }
-void test_dp_add_SSE2(int tds,size_t iterations){
+void test_dp_add_SSE2(int tds, size_t iterations){
     
     printf("Testing SSE2 Add:\n");
     double *sum = (double*)malloc(tds * sizeof(double));
@@ -173,15 +173,15 @@ void test_dp_add_SSE2(int tds,size_t iterations){
     
 #pragma omp parallel num_threads(tds)
     {
-        double ret = test_dp_add_SSE2_internal(1.1,2.1,iterations);
+        double ret = test_dp_add_SSE2_internal(1.1, 2.1, iterations);
         sum[omp_get_thread_num()] = ret;
     }
 
     double secs = wclk_secs_since(start);
     uint64 ops = 20 * 1000 * iterations * tds * 2;
-    printf("Seconds = %g\n",secs);
-    printf("FP Ops  = %llu\n",(unsigned long long)ops);
-    printf("FLOPs   = %g\n",ops / secs);
+    printf("Seconds = %g\n", secs);
+    printf("FP Ops  = %llu\n", (unsigned long long)ops);
+    printf("FLOPs   = %g\n", ops / secs);
 
     double out = 0;
     int c = 0;
@@ -189,7 +189,7 @@ void test_dp_add_SSE2(int tds,size_t iterations){
         out += sum[c++];
     }
     
-    printf("sum = %g\n\n",out);
+    printf("sum = %g\n\n", out);
 
     free(sum);
 }
@@ -197,22 +197,22 @@ void test_dp_add_SSE2(int tds,size_t iterations){
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-double test_dp_mul_SSE2_internal(double x,double y,size_t iterations){
-    register __m128d r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB;
+double test_dp_mul_SSE2_internal(double x, double y, size_t iterations){
+    register __m128d r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB;
 
     r0 = _mm_set1_pd(x);
     r1 = _mm_set1_pd(y);
 
     r8 = _mm_set1_pd(-0.0);
 
-    r2 = _mm_xor_pd(r0,r8);
-    r3 = _mm_or_pd(r0,r8);
-    r4 = _mm_andnot_pd(r8,r0);
-    r5 = _mm_mul_pd(r1,_mm_set1_pd(0.37796447300922722721));
-    r6 = _mm_mul_pd(r1,_mm_set1_pd(0.24253562503633297352));
-    r7 = _mm_mul_pd(r1,_mm_set1_pd(4.1231056256176605498));
-    r8 = _mm_add_pd(r0,_mm_set1_pd(2.3));
-    r9 = _mm_sub_pd(r1,_mm_set1_pd(2.3));
+    r2 = _mm_xor_pd(r0, r8);
+    r3 = _mm_or_pd(r0, r8);
+    r4 = _mm_andnot_pd(r8, r0);
+    r5 = _mm_mul_pd(r1, _mm_set1_pd(0.37796447300922722721));
+    r6 = _mm_mul_pd(r1, _mm_set1_pd(0.24253562503633297352));
+    r7 = _mm_mul_pd(r1, _mm_set1_pd(4.1231056256176605498));
+    r8 = _mm_add_pd(r0, _mm_set1_pd(2.3));
+    r9 = _mm_sub_pd(r1, _mm_set1_pd(2.3));
 
 //    r8 = _mm_set1_pd(1.4142135623730950488);
 //    r9 = _mm_set1_pd(1.7320508075688772935);
@@ -230,27 +230,27 @@ double test_dp_mul_SSE2_internal(double x,double y,size_t iterations){
     while (c < iterations){
         size_t i = 0;
         while (i < 1000){
-            r0 = _mm_mul_pd(r0,rA);
-            r1 = _mm_mul_pd(r1,rA);
-            r2 = _mm_mul_pd(r2,rA);
-            r3 = _mm_mul_pd(r3,rA);
-            r4 = _mm_mul_pd(r4,rA);
-            r5 = _mm_mul_pd(r5,rA);
-            r6 = _mm_mul_pd(r6,rA);
-            r7 = _mm_mul_pd(r7,rA);
-            r8 = _mm_mul_pd(r8,rA);
-            r9 = _mm_mul_pd(r9,rA);
+            r0 = _mm_mul_pd(r0, rA);
+            r1 = _mm_mul_pd(r1, rA);
+            r2 = _mm_mul_pd(r2, rA);
+            r3 = _mm_mul_pd(r3, rA);
+            r4 = _mm_mul_pd(r4, rA);
+            r5 = _mm_mul_pd(r5, rA);
+            r6 = _mm_mul_pd(r6, rA);
+            r7 = _mm_mul_pd(r7, rA);
+            r8 = _mm_mul_pd(r8, rA);
+            r9 = _mm_mul_pd(r9, rA);
 
-            r0 = _mm_mul_pd(r0,rB);
-            r1 = _mm_mul_pd(r1,rB);
-            r2 = _mm_mul_pd(r2,rB);
-            r3 = _mm_mul_pd(r3,rB);
-            r4 = _mm_mul_pd(r4,rB);
-            r5 = _mm_mul_pd(r5,rB);
-            r6 = _mm_mul_pd(r6,rB);
-            r7 = _mm_mul_pd(r7,rB);
-            r8 = _mm_mul_pd(r8,rB);
-            r9 = _mm_mul_pd(r9,rB);
+            r0 = _mm_mul_pd(r0, rB);
+            r1 = _mm_mul_pd(r1, rB);
+            r2 = _mm_mul_pd(r2, rB);
+            r3 = _mm_mul_pd(r3, rB);
+            r4 = _mm_mul_pd(r4, rB);
+            r5 = _mm_mul_pd(r5, rB);
+            r6 = _mm_mul_pd(r6, rB);
+            r7 = _mm_mul_pd(r7, rB);
+            r8 = _mm_mul_pd(r8, rB);
+            r9 = _mm_mul_pd(r9, rB);
 
             i++;
         }
@@ -265,26 +265,26 @@ double test_dp_mul_SSE2_internal(double x,double y,size_t iterations){
         //print(r7);
         //cout << endl;
 
-        r0 = _mm_and_pd(r0,MASK);
-        r1 = _mm_and_pd(r1,MASK);
-        r2 = _mm_and_pd(r2,MASK);
-        r3 = _mm_and_pd(r3,MASK);
-        r4 = _mm_and_pd(r4,MASK);
-        r5 = _mm_and_pd(r5,MASK);
-        r6 = _mm_and_pd(r6,MASK);
-        r7 = _mm_and_pd(r7,MASK);
-        r8 = _mm_and_pd(r8,MASK);
-        r9 = _mm_and_pd(r9,MASK);
-        r0 = _mm_or_pd(r0,vONE);
-        r1 = _mm_or_pd(r1,vONE);
-        r2 = _mm_or_pd(r2,vONE);
-        r3 = _mm_or_pd(r3,vONE);
-        r4 = _mm_or_pd(r4,vONE);
-        r5 = _mm_or_pd(r5,vONE);
-        r6 = _mm_or_pd(r6,vONE);
-        r7 = _mm_or_pd(r7,vONE);
-        r8 = _mm_or_pd(r8,vONE);
-        r9 = _mm_or_pd(r9,vONE);
+        r0 = _mm_and_pd(r0, MASK);
+        r1 = _mm_and_pd(r1, MASK);
+        r2 = _mm_and_pd(r2, MASK);
+        r3 = _mm_and_pd(r3, MASK);
+        r4 = _mm_and_pd(r4, MASK);
+        r5 = _mm_and_pd(r5, MASK);
+        r6 = _mm_and_pd(r6, MASK);
+        r7 = _mm_and_pd(r7, MASK);
+        r8 = _mm_and_pd(r8, MASK);
+        r9 = _mm_and_pd(r9, MASK);
+        r0 = _mm_or_pd(r0, vONE);
+        r1 = _mm_or_pd(r1, vONE);
+        r2 = _mm_or_pd(r2, vONE);
+        r3 = _mm_or_pd(r3, vONE);
+        r4 = _mm_or_pd(r4, vONE);
+        r5 = _mm_or_pd(r5, vONE);
+        r6 = _mm_or_pd(r6, vONE);
+        r7 = _mm_or_pd(r7, vONE);
+        r8 = _mm_or_pd(r8, vONE);
+        r9 = _mm_or_pd(r9, vONE);
 
         c++;
     }
@@ -296,17 +296,17 @@ double test_dp_mul_SSE2_internal(double x,double y,size_t iterations){
 //    cout << "FP Ops  = " << ops << endl;
 //    cout << "FLOPs   = " << ops / secs << endl;
 
-    r0 = _mm_add_pd(r0,r1);
-    r2 = _mm_add_pd(r2,r3);
-    r4 = _mm_add_pd(r4,r5);
-    r6 = _mm_add_pd(r6,r7);
-    r8 = _mm_add_pd(r8,r9);
+    r0 = _mm_add_pd(r0, r1);
+    r2 = _mm_add_pd(r2, r3);
+    r4 = _mm_add_pd(r4, r5);
+    r6 = _mm_add_pd(r6, r7);
+    r8 = _mm_add_pd(r8, r9);
     
-    r0 = _mm_add_pd(r0,r2);
-    r4 = _mm_add_pd(r4,r6);
+    r0 = _mm_add_pd(r0, r2);
+    r4 = _mm_add_pd(r4, r6);
 
-    r0 = _mm_add_pd(r0,r4);
-    r0 = _mm_add_pd(r0,r8);
+    r0 = _mm_add_pd(r0, r4);
+    r0 = _mm_add_pd(r0, r8);
 
     double out = 0;
     __m128d tmp = r0;
@@ -315,7 +315,7 @@ double test_dp_mul_SSE2_internal(double x,double y,size_t iterations){
 
     return out;
 }
-void test_dp_mul_SSE2(int tds,size_t iterations){
+void test_dp_mul_SSE2(int tds, size_t iterations){
     
     printf("Testing SSE2 Mul:\n");
     double *sum = (double*)malloc(tds * sizeof(double));
@@ -323,15 +323,15 @@ void test_dp_mul_SSE2(int tds,size_t iterations){
     
 #pragma omp parallel num_threads(tds)
     {
-        double ret = test_dp_mul_SSE2_internal(1.1,2.1,iterations);
+        double ret = test_dp_mul_SSE2_internal(1.1, 2.1, iterations);
         sum[omp_get_thread_num()] = ret;
     }
 
     double secs = wclk_secs_since(start);
     uint64 ops = 20 * 1000 * iterations * tds * 2;
-    printf("Seconds = %g\n",secs);
-    printf("FP Ops  = %llu\n",(unsigned long long)ops);
-    printf("FLOPs   = %g\n",ops / secs);
+    printf("Seconds = %g\n", secs);
+    printf("FP Ops  = %llu\n", (unsigned long long)ops);
+    printf("FLOPs   = %g\n", ops / secs);
 
     double out = 0;
     int c = 0;
@@ -339,7 +339,7 @@ void test_dp_mul_SSE2(int tds,size_t iterations){
         out += sum[c++];
     }
     
-    printf("sum = %g\n\n",out);
+    printf("sum = %g\n\n", out);
 
     free(sum);
 }
@@ -347,24 +347,24 @@ void test_dp_mul_SSE2(int tds,size_t iterations){
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-double test_dp_mac_SSE2_internal(double x,double y,size_t iterations){
-    register __m128d r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB,rC,rD,rE,rF;
+double test_dp_mac_SSE2_internal(double x, double y, size_t iterations){
+    register __m128d r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB, rC, rD, rE, rF;
 
     r0 = _mm_set1_pd(x);
     r1 = _mm_set1_pd(y);
 
     r8 = _mm_set1_pd(-0.0);
 
-    r2 = _mm_xor_pd(r0,r8);
-    r3 = _mm_or_pd(r0,r8);
-    r4 = _mm_andnot_pd(r8,r0);
-    r5 = _mm_mul_pd(r1,_mm_set1_pd(0.37796447300922722721));
-    r6 = _mm_mul_pd(r1,_mm_set1_pd(0.24253562503633297352));
-    r7 = _mm_mul_pd(r1,_mm_set1_pd(4.1231056256176605498));
-    r8 = _mm_add_pd(r0,_mm_set1_pd(0.37796447300922722721));
-    r9 = _mm_add_pd(r1,_mm_set1_pd(0.24253562503633297352));
-    rA = _mm_sub_pd(r0,_mm_set1_pd(4.1231056256176605498));
-    rB = _mm_sub_pd(r1,_mm_set1_pd(4.1231056256176605498));
+    r2 = _mm_xor_pd(r0, r8);
+    r3 = _mm_or_pd(r0, r8);
+    r4 = _mm_andnot_pd(r8, r0);
+    r5 = _mm_mul_pd(r1, _mm_set1_pd(0.37796447300922722721));
+    r6 = _mm_mul_pd(r1, _mm_set1_pd(0.24253562503633297352));
+    r7 = _mm_mul_pd(r1, _mm_set1_pd(4.1231056256176605498));
+    r8 = _mm_add_pd(r0, _mm_set1_pd(0.37796447300922722721));
+    r9 = _mm_add_pd(r1, _mm_set1_pd(0.24253562503633297352));
+    rA = _mm_sub_pd(r0, _mm_set1_pd(4.1231056256176605498));
+    rB = _mm_sub_pd(r1, _mm_set1_pd(4.1231056256176605498));
 
     rC = _mm_set1_pd(1.4142135623730950488);
     rD = _mm_set1_pd(1.7320508075688772935);
@@ -379,57 +379,57 @@ double test_dp_mac_SSE2_internal(double x,double y,size_t iterations){
     while (c < iterations){
         size_t i = 0;
         while (i < 1000){
-            r0 = _mm_mul_pd(r0,rC);
-            r1 = _mm_add_pd(r1,rD);
-            r2 = _mm_mul_pd(r2,rE);
-            r3 = _mm_sub_pd(r3,rF);
-            r4 = _mm_mul_pd(r4,rC);
-            r5 = _mm_add_pd(r5,rD);
-            r6 = _mm_mul_pd(r6,rE);
-            r7 = _mm_sub_pd(r7,rF);
-            r8 = _mm_mul_pd(r8,rC);
-            r9 = _mm_add_pd(r9,rD);
-            rA = _mm_mul_pd(rA,rE);
-            rB = _mm_sub_pd(rB,rF);
+            r0 = _mm_mul_pd(r0, rC);
+            r1 = _mm_add_pd(r1, rD);
+            r2 = _mm_mul_pd(r2, rE);
+            r3 = _mm_sub_pd(r3, rF);
+            r4 = _mm_mul_pd(r4, rC);
+            r5 = _mm_add_pd(r5, rD);
+            r6 = _mm_mul_pd(r6, rE);
+            r7 = _mm_sub_pd(r7, rF);
+            r8 = _mm_mul_pd(r8, rC);
+            r9 = _mm_add_pd(r9, rD);
+            rA = _mm_mul_pd(rA, rE);
+            rB = _mm_sub_pd(rB, rF);
 
-            r0 = _mm_add_pd(r0,rF);
-            r1 = _mm_mul_pd(r1,rE);
-            r2 = _mm_sub_pd(r2,rD);
-            r3 = _mm_mul_pd(r3,rC);
-            r4 = _mm_add_pd(r4,rF);
-            r5 = _mm_mul_pd(r5,rE);
-            r6 = _mm_sub_pd(r6,rD);
-            r7 = _mm_mul_pd(r7,rC);
-            r8 = _mm_add_pd(r8,rF);
-            r9 = _mm_mul_pd(r9,rE);
-            rA = _mm_sub_pd(rA,rD);
-            rB = _mm_mul_pd(rB,rC);
+            r0 = _mm_add_pd(r0, rF);
+            r1 = _mm_mul_pd(r1, rE);
+            r2 = _mm_sub_pd(r2, rD);
+            r3 = _mm_mul_pd(r3, rC);
+            r4 = _mm_add_pd(r4, rF);
+            r5 = _mm_mul_pd(r5, rE);
+            r6 = _mm_sub_pd(r6, rD);
+            r7 = _mm_mul_pd(r7, rC);
+            r8 = _mm_add_pd(r8, rF);
+            r9 = _mm_mul_pd(r9, rE);
+            rA = _mm_sub_pd(rA, rD);
+            rB = _mm_mul_pd(rB, rC);
             
-            r0 = _mm_mul_pd(r0,rC);
-            r1 = _mm_add_pd(r1,rD);
-            r2 = _mm_mul_pd(r2,rE);
-            r3 = _mm_sub_pd(r3,rF);
-            r4 = _mm_mul_pd(r4,rC);
-            r5 = _mm_add_pd(r5,rD);
-            r6 = _mm_mul_pd(r6,rE);
-            r7 = _mm_sub_pd(r7,rF);
-            r8 = _mm_mul_pd(r8,rC);
-            r9 = _mm_add_pd(r9,rD);
-            rA = _mm_mul_pd(rA,rE);
-            rB = _mm_sub_pd(rB,rF);
+            r0 = _mm_mul_pd(r0, rC);
+            r1 = _mm_add_pd(r1, rD);
+            r2 = _mm_mul_pd(r2, rE);
+            r3 = _mm_sub_pd(r3, rF);
+            r4 = _mm_mul_pd(r4, rC);
+            r5 = _mm_add_pd(r5, rD);
+            r6 = _mm_mul_pd(r6, rE);
+            r7 = _mm_sub_pd(r7, rF);
+            r8 = _mm_mul_pd(r8, rC);
+            r9 = _mm_add_pd(r9, rD);
+            rA = _mm_mul_pd(rA, rE);
+            rB = _mm_sub_pd(rB, rF);
 
-            r0 = _mm_add_pd(r0,rF);
-            r1 = _mm_mul_pd(r1,rE);
-            r2 = _mm_sub_pd(r2,rD);
-            r3 = _mm_mul_pd(r3,rC);
-            r4 = _mm_add_pd(r4,rF);
-            r5 = _mm_mul_pd(r5,rE);
-            r6 = _mm_sub_pd(r6,rD);
-            r7 = _mm_mul_pd(r7,rC);
-            r8 = _mm_add_pd(r8,rF);
-            r9 = _mm_mul_pd(r9,rE);
-            rA = _mm_sub_pd(rA,rD);
-            rB = _mm_mul_pd(rB,rC);
+            r0 = _mm_add_pd(r0, rF);
+            r1 = _mm_mul_pd(r1, rE);
+            r2 = _mm_sub_pd(r2, rD);
+            r3 = _mm_mul_pd(r3, rC);
+            r4 = _mm_add_pd(r4, rF);
+            r5 = _mm_mul_pd(r5, rE);
+            r6 = _mm_sub_pd(r6, rD);
+            r7 = _mm_mul_pd(r7, rC);
+            r8 = _mm_add_pd(r8, rF);
+            r9 = _mm_mul_pd(r9, rE);
+            rA = _mm_sub_pd(rA, rD);
+            rB = _mm_mul_pd(rB, rC);
 
             i++;
         }
@@ -448,30 +448,30 @@ double test_dp_mac_SSE2_internal(double x,double y,size_t iterations){
         //print(rB);
         //cout << endl;
 
-        r0 = _mm_and_pd(r0,MASK);
-        r1 = _mm_and_pd(r1,MASK);
-        r2 = _mm_and_pd(r2,MASK);
-        r3 = _mm_and_pd(r3,MASK);
-        r4 = _mm_and_pd(r4,MASK);
-        r5 = _mm_and_pd(r5,MASK);
-        r6 = _mm_and_pd(r6,MASK);
-        r7 = _mm_and_pd(r7,MASK);
-        r8 = _mm_and_pd(r8,MASK);
-        r9 = _mm_and_pd(r9,MASK);
-        rA = _mm_and_pd(rA,MASK);
-        rB = _mm_and_pd(rB,MASK);
-        r0 = _mm_or_pd(r0,vONE);
-        r1 = _mm_or_pd(r1,vONE);
-        r2 = _mm_or_pd(r2,vONE);
-        r3 = _mm_or_pd(r3,vONE);
-        r4 = _mm_or_pd(r4,vONE);
-        r5 = _mm_or_pd(r5,vONE);
-        r6 = _mm_or_pd(r6,vONE);
-        r7 = _mm_or_pd(r7,vONE);
-        r8 = _mm_or_pd(r8,vONE);
-        r9 = _mm_or_pd(r9,vONE);
-        rA = _mm_or_pd(rA,vONE);
-        rB = _mm_or_pd(rB,vONE);
+        r0 = _mm_and_pd(r0, MASK);
+        r1 = _mm_and_pd(r1, MASK);
+        r2 = _mm_and_pd(r2, MASK);
+        r3 = _mm_and_pd(r3, MASK);
+        r4 = _mm_and_pd(r4, MASK);
+        r5 = _mm_and_pd(r5, MASK);
+        r6 = _mm_and_pd(r6, MASK);
+        r7 = _mm_and_pd(r7, MASK);
+        r8 = _mm_and_pd(r8, MASK);
+        r9 = _mm_and_pd(r9, MASK);
+        rA = _mm_and_pd(rA, MASK);
+        rB = _mm_and_pd(rB, MASK);
+        r0 = _mm_or_pd(r0, vONE);
+        r1 = _mm_or_pd(r1, vONE);
+        r2 = _mm_or_pd(r2, vONE);
+        r3 = _mm_or_pd(r3, vONE);
+        r4 = _mm_or_pd(r4, vONE);
+        r5 = _mm_or_pd(r5, vONE);
+        r6 = _mm_or_pd(r6, vONE);
+        r7 = _mm_or_pd(r7, vONE);
+        r8 = _mm_or_pd(r8, vONE);
+        r9 = _mm_or_pd(r9, vONE);
+        rA = _mm_or_pd(rA, vONE);
+        rB = _mm_or_pd(rB, vONE);
 
         c++;
     }
@@ -483,19 +483,19 @@ double test_dp_mac_SSE2_internal(double x,double y,size_t iterations){
 //    cout << "FP Ops  = " << ops << endl;
 //    cout << "FLOPs   = " << ops / secs << endl;
 
-    r0 = _mm_add_pd(r0,r1);
-    r2 = _mm_add_pd(r2,r3);
-    r4 = _mm_add_pd(r4,r5);
-    r6 = _mm_add_pd(r6,r7);
-    r8 = _mm_add_pd(r8,r9);
-    rA = _mm_add_pd(rA,rB);
+    r0 = _mm_add_pd(r0, r1);
+    r2 = _mm_add_pd(r2, r3);
+    r4 = _mm_add_pd(r4, r5);
+    r6 = _mm_add_pd(r6, r7);
+    r8 = _mm_add_pd(r8, r9);
+    rA = _mm_add_pd(rA, rB);
     
-    r0 = _mm_add_pd(r0,r2);
-    r4 = _mm_add_pd(r4,r6);
-    r8 = _mm_add_pd(r8,rA);
+    r0 = _mm_add_pd(r0, r2);
+    r4 = _mm_add_pd(r4, r6);
+    r8 = _mm_add_pd(r8, rA);
 
-    r0 = _mm_add_pd(r0,r4);
-    r0 = _mm_add_pd(r0,r8);
+    r0 = _mm_add_pd(r0, r4);
+    r0 = _mm_add_pd(r0, r8);
 
     double out = 0;
     __m128d tmp = r0;
@@ -504,7 +504,7 @@ double test_dp_mac_SSE2_internal(double x,double y,size_t iterations){
 
     return out;
 }
-void test_dp_mac_SSE2(int tds,size_t iterations){
+void test_dp_mac_SSE2(int tds, size_t iterations){
     
     printf("Testing SSE2 Mul + Add:\n");
     double *sum = (double*)malloc(tds * sizeof(double));
@@ -512,15 +512,15 @@ void test_dp_mac_SSE2(int tds,size_t iterations){
     
 #pragma omp parallel num_threads(tds)
     {
-        double ret = test_dp_mac_SSE2_internal(1.1,2.1,iterations);
+        double ret = test_dp_mac_SSE2_internal(1.1, 2.1, iterations);
         sum[omp_get_thread_num()] = ret;
     }
 
     double secs = wclk_secs_since(start);
     uint64 ops = 48 * 1000 * iterations * tds * 2;
-    printf("Seconds = %g\n",secs);
-    printf("FP Ops  = %llu\n",(unsigned long long)ops);
-    printf("FLOPs   = %g\n",ops / secs);
+    printf("Seconds = %g\n", secs);
+    printf("FP Ops  = %llu\n", (unsigned long long)ops);
+    printf("FLOPs   = %g\n", ops / secs);
 
     double out = 0;
     int c = 0;
@@ -528,7 +528,7 @@ void test_dp_mac_SSE2(int tds,size_t iterations){
         out += sum[c++];
     }
     
-    printf("sum = %g\n\n",out);
+    printf("sum = %g\n\n", out);
 
     free(sum);
 }

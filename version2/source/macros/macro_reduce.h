@@ -14,34 +14,34 @@
 ////////////////////////////////////////////////////////////////////////////////
 #define flops_reduce_chains4(   \
     vadd,   \
-    r0,r1,r2,r3 \
+    r0, r1, r2, r3 \
 ){  \
-    r0 = vadd(r0,r2);   \
-    r1 = vadd(r1,r3);   \
+    r0 = vadd(r0, r2);   \
+    r1 = vadd(r1, r3);   \
     \
-    r0 = vadd(r0,r1);   \
+    r0 = vadd(r0, r1);   \
 }
 #define flops_reduce_chains8(   \
     vadd,   \
-    r0,r1,r2,r3,r4,r5,r6,r7 \
+    r0, r1, r2, r3, r4, r5, r6, r7 \
 ){  \
-    r0 = vadd(r0,r4);   \
-    r1 = vadd(r1,r5);   \
-    r2 = vadd(r2,r6);   \
-    r3 = vadd(r3,r7);   \
+    r0 = vadd(r0, r4);   \
+    r1 = vadd(r1, r5);   \
+    r2 = vadd(r2, r6);   \
+    r3 = vadd(r3, r7);   \
     \
-    r0 = vadd(r0,r2);   \
-    r1 = vadd(r1,r3);   \
+    r0 = vadd(r0, r2);   \
+    r1 = vadd(r1, r3);   \
     \
-    r0 = vadd(r0,r1);   \
+    r0 = vadd(r0, r1);   \
 }
 #define flops_reduce_chains12(  \
     vadd,   \
-    r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,rA,rB \
+    r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB \
 ){  \
-    flops_reduce_chains8(vadd,r0,r1,r2,r3,r4,r5,r6,r7); \
-    flops_reduce_chains4(vadd,r8,r9,rA,rB); \
-    r0 = vadd(r0,r8);   \
+    flops_reduce_chains8(vadd, r0, r1, r2, r3, r4, r5, r6, r7); \
+    flops_reduce_chains4(vadd, r8, r9, rA, rB); \
+    r0 = vadd(r0, r8);   \
 }
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

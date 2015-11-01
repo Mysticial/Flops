@@ -24,7 +24,7 @@
 using namespace flops;
 
 int main(){
-    run_benchmark(1000000000,omp_get_max_threads());
+    run_benchmark(1000000000, omp_get_max_threads());
 
 #ifdef _WIN32
     system("pause");

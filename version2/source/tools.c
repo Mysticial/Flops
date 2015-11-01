@@ -44,7 +44,7 @@ uint64 rdtsc(){
 #else
 #include <sys/time.h>
 uint64 rdtsc(){
-    unsigned int lo,hi;
+    unsigned int lo, hi;
     __asm__ __volatile__ ("rdtsc" : "=a" (lo), "=d" (hi));
     return ((uint64)hi << 32) | lo;
 }
@@ -65,7 +65,7 @@ wclk wclk_now(){
     }
     return out;
 }
-double wclk_secs_dif(wclk end,wclk start){
+double wclk_secs_dif(wclk end, wclk start){
     LARGE_INTEGER freqency;
     if (!QueryPerformanceFrequency(&freqency)){
         printf("\n");
@@ -78,7 +78,7 @@ double wclk_secs_dif(wclk end,wclk start){
 #else
 wclk wclk_now(){
     wclk out;
-    if (gettimeofday(&out.time,NULL)){
+    if (gettimeofday(&out.time, NULL)){
         printf("\n");
         printf("Unable to access clock.");
         printf("\n");
@@ -86,7 +86,7 @@ wclk wclk_now(){
     }
     return out;
 }
-double wclk_secs_dif(wclk end,wclk start){
+double wclk_secs_dif(wclk end, wclk start){
     uint64 isec = (uint64)end.time.tv_sec - (uint64)start.time.tv_sec;
     int usec = end.time.tv_usec - start.time.tv_usec;
     if (usec < 0){
@@ -97,7 +97,7 @@ double wclk_secs_dif(wclk end,wclk start){
 }
 #endif
 double wclk_secs_since(wclk start){
-    return wclk_secs_dif(wclk_now(),start);
+    return wclk_secs_dif(wclk_now(), start);
 }
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

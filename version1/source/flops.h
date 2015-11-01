@@ -56,35 +56,35 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifdef x86_FMA3
 #define arch_name (arch_name0 "FMA3")
-void test_dp_add_AVX(int tds,size_t iterations);
-void test_dp_mul_AVX(int tds,size_t iterations);
-void test_dp_mac_AVX(int tds,size_t iterations);
-void test_dp_fma_FMA3(int tds,size_t iterations);
+void test_dp_add_AVX(int tds, size_t iterations);
+void test_dp_mul_AVX(int tds, size_t iterations);
+void test_dp_mac_AVX(int tds, size_t iterations);
+void test_dp_fma_FMA3(int tds, size_t iterations);
 #endif
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 #ifdef x86_FMA4
 #define arch_name (arch_name0 "FMA4")
-void test_dp_add_AVX(int tds,size_t iterations);
-void test_dp_mul_AVX(int tds,size_t iterations);
-void test_dp_mac_AVX(int tds,size_t iterations);
-void test_dp_fma_FMA4(int tds,size_t iterations);
+void test_dp_add_AVX(int tds, size_t iterations);
+void test_dp_mul_AVX(int tds, size_t iterations);
+void test_dp_mac_AVX(int tds, size_t iterations);
+void test_dp_fma_FMA4(int tds, size_t iterations);
 #endif
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 #ifdef x86_AVX
 #define arch_name (arch_name0 "AVX")
-void test_dp_add_AVX(int tds,size_t iterations);
-void test_dp_mul_AVX(int tds,size_t iterations);
-void test_dp_mac_AVX(int tds,size_t iterations);
+void test_dp_add_AVX(int tds, size_t iterations);
+void test_dp_mul_AVX(int tds, size_t iterations);
+void test_dp_mac_AVX(int tds, size_t iterations);
 #endif
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 #ifdef x86_SSE2
 #define arch_name (arch_name0 "SSE2")
-void test_dp_add_SSE2(int tds,size_t iterations);
-void test_dp_mul_SSE2(int tds,size_t iterations);
-void test_dp_mac_SSE2(int tds,size_t iterations);
+void test_dp_add_SSE2(int tds, size_t iterations);
+void test_dp_mul_SSE2(int tds, size_t iterations);
+void test_dp_mac_SSE2(int tds, size_t iterations);
 #endif
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

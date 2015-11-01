@@ -12,18 +12,18 @@
 
 namespace flops{
 
-    void run_benchmark(largeint_t iterations,size_t threads){
+    void run_benchmark(largeint_t iterations, size_t threads){
         cout << "Running Benchmarks for Intel Core 2..." << endl;
         cout << endl;
 
         //  128-bit
-        bench_add_f32v2_SSE_chains4().run(iterations,threads);
-        bench_mul_f32v2_SSE_chains8().run(iterations,threads);
-        bench_mac_f32v2_SSE_chains12().run(iterations,threads);
+        bench_add_f32v2_SSE_chains4().run(iterations, threads);
+        bench_mul_f32v2_SSE_chains8().run(iterations, threads);
+        bench_mac_f32v2_SSE_chains12().run(iterations, threads);
 
-        bench_add_f64v1_SSE2_chains4().run(iterations,threads);
-        bench_mul_f64v1_SSE2_chains8().run(iterations,threads);
-        bench_mac_f64v1_SSE2_chains12().run(iterations,threads);
+        bench_add_f64v1_SSE2_chains4().run(iterations, threads);
+        bench_mul_f64v1_SSE2_chains8().run(iterations, threads);
+        bench_mac_f64v1_SSE2_chains12().run(iterations, threads);
     }
 
 }

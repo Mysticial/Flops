@@ -31,42 +31,42 @@
 
 namespace flops{
 
-    void run_benchmark(largeint_t iterations,size_t threads){
+    void run_benchmark(largeint_t iterations, size_t threads){
         cout << "Running Benchmarks for Intel Skylake..." << endl;
         cout << endl;
 
         //  128-bit
-        bench_add_f32v2_SSE_chains8().run(iterations,threads);
-        bench_mul_f32v2_SSE_chains12().run(iterations,threads);
-        bench_mac_f32v2_SSE_chains12().run(iterations,threads);
-        bench_fma_linear_f32v2_FMA3_chains12().run(iterations,threads);
+        bench_add_f32v2_SSE_chains8().run(iterations, threads);
+        bench_mul_f32v2_SSE_chains12().run(iterations, threads);
+        bench_mac_f32v2_SSE_chains12().run(iterations, threads);
+        bench_fma_linear_f32v2_FMA3_chains12().run(iterations, threads);
 
-        bench_add_f64v1_SSE2_chains8().run(iterations,threads);
-        bench_mul_f64v1_SSE2_chains12().run(iterations,threads);
-        bench_mac_f64v1_SSE2_chains12().run(iterations,threads);
-        bench_fma_linear_f64v1_FMA3_chains12().run(iterations,threads);
+        bench_add_f64v1_SSE2_chains8().run(iterations, threads);
+        bench_mul_f64v1_SSE2_chains12().run(iterations, threads);
+        bench_mac_f64v1_SSE2_chains12().run(iterations, threads);
+        bench_fma_linear_f64v1_FMA3_chains12().run(iterations, threads);
 
         //  256-bit
-        bench_add_f32v3_AVX_chains8().run(iterations,threads);
-        bench_mul_f32v3_AVX_chains12().run(iterations,threads);
-        bench_mac_f32v3_AVX_chains12().run(iterations,threads);
-        bench_fma_linear_f32v3_FMA3_chains12().run(iterations,threads);
+        bench_add_f32v3_AVX_chains8().run(iterations, threads);
+        bench_mul_f32v3_AVX_chains12().run(iterations, threads);
+        bench_mac_f32v3_AVX_chains12().run(iterations, threads);
+        bench_fma_linear_f32v3_FMA3_chains12().run(iterations, threads);
 
-        bench_add_f64v2_AVX_chains8().run(iterations,threads);
-        bench_mul_f64v2_AVX_chains12().run(iterations,threads);
-        bench_mac_f64v2_AVX_chains12().run(iterations,threads);
-        bench_fma_linear_f64v2_FMA3_chains12().run(iterations,threads);
+        bench_add_f64v2_AVX_chains8().run(iterations, threads);
+        bench_mul_f64v2_AVX_chains12().run(iterations, threads);
+        bench_mac_f64v2_AVX_chains12().run(iterations, threads);
+        bench_fma_linear_f64v2_FMA3_chains12().run(iterations, threads);
 
         //  512-bit
-        bench_add_f32v4_AVX512_chains8().run(iterations,threads);
-        bench_mul_f32v4_AVX512_chains12().run(iterations,threads);
-        bench_mac_f32v4_AVX512_chains12().run(iterations,threads);
-        bench_fma_linear_f32v4_AVX512_chains12().run(iterations,threads);
+        bench_add_f32v4_AVX512_chains8().run(iterations, threads);
+        bench_mul_f32v4_AVX512_chains12().run(iterations, threads);
+        bench_mac_f32v4_AVX512_chains12().run(iterations, threads);
+        bench_fma_linear_f32v4_AVX512_chains12().run(iterations, threads);
 
-        bench_add_f64v3_AVX512_chains8().run(iterations,threads);
-        bench_mul_f64v3_AVX512_chains12().run(iterations,threads);
-        bench_mac_f64v3_AVX512_chains12().run(iterations,threads);
-        bench_fma_linear_f64v3_AVX512_chains12().run(iterations,threads);
+        bench_add_f64v3_AVX512_chains8().run(iterations, threads);
+        bench_mul_f64v3_AVX512_chains12().run(iterations, threads);
+        bench_mac_f64v3_AVX512_chains12().run(iterations, threads);
+        bench_fma_linear_f64v3_AVX512_chains12().run(iterations, threads);
     }
 
 }
