@@ -1,0 +1,120 @@
+Intel Core i7 6820HK
+Frequency: 3.20467 GHz
+
+-----
+
+Running Benchmarks for Intel Haswell...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 10.0995
+    GFlops     = 101.391
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 15.3596
+    GFlops     = 100.002
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 15.3106
+    GFlops     = 100.322
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 15.0257
+    GFlops     = 204.45
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 10.0607
+    GFlops     = 50.8911
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 15.3289
+    GFlops     = 50.1014
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 15.3088
+    GFlops     = 50.1672
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 15.0422
+    GFlops     = 102.113
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 10.2099
+    GFlops     = 200.589
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 15.4227
+    GFlops     = 199.187
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 15.3708
+    GFlops     = 199.86
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 15.0497
+    GFlops     = 408.248
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 10.1968
+    GFlops     = 100.424
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 15.6596
+    GFlops     = 98.087
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 15.3746
+    GFlops     = 99.9052
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 15.0466
+    GFlops     = 204.166
+
+Press any key to continue . . .
