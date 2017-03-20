@@ -1,7 +1,7 @@
-mkdir "binaries-linux" #
+mkdir -p "binaries-linux" #
 #
 basepath="binaries-linux/x64-" #
-flags="-std=c++0x -static -fopenmp -O2" #
+flags="-std=c++11 -fopenmp -O2" #
 #
 g++ source/*.c source/*.cpp -o "${basepath}Core2.out"       $flags -march=core2      -D "ArchCore2" #
 g++ source/*.c source/*.cpp -o "${basepath}SandyBridge.out" $flags -march=corei7-avx -D "ArchSandyBridge" #

@@ -1,0 +1,430 @@
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.87733
+    GFlops     = 104.975
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87284
+    GFlops     = 210.145
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.86157
+    GFlops     = 262.046
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.86795
+    GFlops     = 52.5889
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79681
+    GFlops     = 65.6679
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73782
+    GFlops     = 78.8677
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 5.84093
+    GFlops     = 175.314
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84095
+    GFlops     = 350.628
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6776
+    GFlops     = 263.068
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.84286
+    GFlops     = 87.6284
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5701
+    GFlops     = 65.7671
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4633
+    GFlops     = 78.9179
+
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.88055
+    GFlops     = 104.906
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87261
+    GFlops     = 210.154
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84772
+    GFlops     = 262.667
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.8693
+    GFlops     = 52.5743
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78843
+    GFlops     = 65.7386
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73711
+    GFlops     = 78.8735
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 5.84192
+    GFlops     = 175.285
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.85895
+    GFlops     = 349.551
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6778
+    GFlops     = 263.063
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.84096
+    GFlops     = 87.6568
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5703
+    GFlops     = 65.7661
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4629
+    GFlops     = 78.9195
+
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.41835
+    GFlops     = 94.4937
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 5.63726
+    GFlops     = 181.648
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.8599
+    GFlops     = 262.121
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.8679
+    GFlops     = 52.5895
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78849
+    GFlops     = 65.738
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73315
+    GFlops     = 78.9056
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 5.84098
+    GFlops     = 175.313
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.8527
+    GFlops     = 349.924
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6788
+    GFlops     = 263.04
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.8411
+    GFlops     = 87.6547
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.57
+    GFlops     = 65.7675
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4625
+    GFlops     = 78.921
+
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.86927
+    GFlops     = 105.149
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87255
+    GFlops     = 210.157
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84835
+    GFlops     = 262.638
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.89365
+    GFlops     = 52.3127
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78709
+    GFlops     = 65.7499
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73261
+    GFlops     = 78.9099
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 5.84186
+    GFlops     = 175.287
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84172
+    GFlops     = 350.582
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6775
+    GFlops     = 263.07
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.85265
+    GFlops     = 87.4817
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5755
+    GFlops     = 65.7442
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4626
+    GFlops     = 78.9208
+
+Running Benchmarks for Intel Sandy Bridge...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.87651
+    GFlops     = 104.993
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.88176
+    GFlops     = 209.76
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84744
+    GFlops     = 262.679
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.87063
+    GFlops     = 52.5599
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78887
+    GFlops     = 65.7348
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73849
+    GFlops     = 78.8623
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 294.4
+    FP Ops     = 1024000000000
+    seconds    = 5.84112
+    GFlops     = 175.309
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84093
+    GFlops     = 350.629
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6776
+    GFlops     = 263.067
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.84084
+    GFlops     = 87.6587
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5703
+    GFlops     = 65.7664
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.467
+    GFlops     = 78.9026
+

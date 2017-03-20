@@ -1,0 +1,710 @@
+Running Benchmarks for AMD Piledriver...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.95974
+    GFlops     = 206.463
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.86914
+    GFlops     = 210.304
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84124
+    GFlops     = 262.958
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8571
+    GFlops     = 221.692
+
+Single-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8712
+    GFlops     = 221.466
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 5.84143
+    GFlops     = 87.6498
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78908
+    GFlops     = 65.7331
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73388
+    GFlops     = 78.8997
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8065
+    GFlops     = 111.252
+
+Double-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.7974
+    GFlops     = 111.325
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 9.73334
+    GFlops     = 210.411
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.8412
+    GFlops     = 350.613
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6776
+    GFlops     = 263.068
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.548
+    GFlops     = 223.029
+
+Single-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.6955
+    GFlops     = 221.841
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 11.6777
+    GFlops     = 87.6887
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5707
+    GFlops     = 65.7645
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4634
+    GFlops     = 78.9175
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.633
+    GFlops     = 111.172
+
+Double-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.7172
+    GFlops     = 110.834
+
+Running Benchmarks for AMD Piledriver...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.98565
+    GFlops     = 205.389
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87125
+    GFlops     = 210.213
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84231
+    GFlops     = 262.91
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8364
+    GFlops     = 222.023
+
+Single-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8092
+    GFlops     = 222.461
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 5.84113
+    GFlops     = 87.6542
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78782
+    GFlops     = 65.7437
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73662
+    GFlops     = 78.8774
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8523
+    GFlops     = 110.884
+
+Double-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8779
+    GFlops     = 110.68
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 9.73907
+    GFlops     = 210.287
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84063
+    GFlops     = 350.647
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6777
+    GFlops     = 263.066
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.5669
+    GFlops     = 222.876
+
+Single-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.7205
+    GFlops     = 221.641
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 11.6793
+    GFlops     = 87.6766
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.57
+    GFlops     = 65.7674
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4625
+    GFlops     = 78.9209
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.6855
+    GFlops     = 110.961
+
+Double-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.7034
+    GFlops     = 110.889
+
+Running Benchmarks for AMD Piledriver...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.97804
+    GFlops     = 205.703
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87128
+    GFlops     = 210.212
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84146
+    GFlops     = 262.948
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.9021
+    GFlops     = 220.973
+
+Single-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8481
+    GFlops     = 221.836
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 5.84091
+    GFlops     = 87.6576
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79485
+    GFlops     = 65.6844
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.75131
+    GFlops     = 78.7587
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8557
+    GFlops     = 110.857
+
+Double-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8583
+    GFlops     = 110.836
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 9.73134
+    GFlops     = 210.454
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84124
+    GFlops     = 350.61
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6786
+    GFlops     = 263.044
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.7754
+    GFlops     = 221.203
+
+Single-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.7118
+    GFlops     = 221.71
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 11.6826
+    GFlops     = 87.6518
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5712
+    GFlops     = 65.7624
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4623
+    GFlops     = 78.9218
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.6412
+    GFlops     = 111.138
+
+Double-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.6234
+    GFlops     = 111.21
+
+Running Benchmarks for AMD Piledriver...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.96478
+    GFlops     = 206.253
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.86851
+    GFlops     = 210.331
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84137
+    GFlops     = 262.952
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.7948
+    GFlops     = 222.693
+
+Single-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8432
+    GFlops     = 221.915
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 5.86027
+    GFlops     = 87.3679
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.78804
+    GFlops     = 65.7419
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73544
+    GFlops     = 78.8871
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8304
+    GFlops     = 111.059
+
+Double-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8516
+    GFlops     = 110.89
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 9.73135
+    GFlops     = 210.454
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.86001
+    GFlops     = 349.487
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6778
+    GFlops     = 263.064
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.6667
+    GFlops     = 222.072
+
+Single-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.6175
+    GFlops     = 222.468
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 11.6776
+    GFlops     = 87.6894
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.57
+    GFlops     = 65.7674
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.464
+    GFlops     = 78.9148
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.5711
+    GFlops     = 111.421
+
+Double-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.6016
+    GFlops     = 111.298
+
+Running Benchmarks for AMD Piledriver...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.97917
+    GFlops     = 205.657
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.87035
+    GFlops     = 210.252
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84171
+    GFlops     = 262.936
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.9134
+    GFlops     = 220.795
+
+Single-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 13.8638
+    GFlops     = 221.585
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 5.8527
+    GFlops     = 87.481
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79351
+    GFlops     = 65.6957
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.73661
+    GFlops     = 78.8776
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8899
+    GFlops     = 110.584
+
+Double-Precision - 128-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 1536000000000
+    seconds    = 13.8302
+    GFlops     = 111.061
+
+Single-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 9.73135
+    GFlops     = 210.454
+
+Single-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 691.2
+    FP Ops     = 2048000000000
+    seconds    = 5.84062
+    GFlops     = 350.648
+
+Single-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 3072000000000
+    seconds    = 11.6775
+    GFlops     = 263.069
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.7347
+    GFlops     = 221.527
+
+Single-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 1190.4
+    FP Ops     = 6144000000000
+    seconds    = 27.5693
+    GFlops     = 222.857
+
+Double-Precision - 256-bit AVX - Add/Sub:
+    Dependency Chains  = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 11.6856
+    GFlops     = 87.6295
+
+Double-Precision - 256-bit AVX - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 15.5699
+    GFlops     = 65.7681
+
+Double-Precision - 256-bit AVX - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 19.4623
+    GFlops     = 78.9217
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.6222
+    GFlops     = 111.215
+
+Double-Precision - 256-bit FMA4 - Fused Multiply Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 3072000000000
+    seconds    = 27.5939
+    GFlops     = 111.329
+
