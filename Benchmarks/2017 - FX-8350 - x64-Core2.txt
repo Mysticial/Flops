@@ -1,0 +1,220 @@
+Running Benchmarks for Intel Core 2...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.88778
+    GFlops     = 104.751
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.89242
+    GFlops     = 209.303
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84166
+    GFlops     = 262.939
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.86972
+    GFlops     = 52.5698
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79304
+    GFlops     = 65.6997
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.74749
+    GFlops     = 78.7895
+
+Running Benchmarks for Intel Core 2...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.87415
+    GFlops     = 105.044
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.8941
+    GFlops     = 209.232
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84185
+    GFlops     = 262.93
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.86867
+    GFlops     = 52.5811
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79346
+    GFlops     = 65.6961
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.74
+    GFlops     = 78.8501
+
+Running Benchmarks for Intel Core 2...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.87025
+    GFlops     = 105.128
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.89981
+    GFlops     = 208.988
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84211
+    GFlops     = 262.919
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.89321
+    GFlops     = 52.3173
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.7927
+    GFlops     = 65.7025
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.7398
+    GFlops     = 78.8517
+
+Running Benchmarks for Intel Core 2...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 4.87871
+    GFlops     = 104.946
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 4.89765
+    GFlops     = 209.08
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84481
+    GFlops     = 262.797
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.86866
+    GFlops     = 52.5812
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79344
+    GFlops     = 65.6963
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.75961
+    GFlops     = 78.6917
+
+Running Benchmarks for Intel Core 2...
+
+Single-Precision - 128-bit SSE - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 147.2
+    FP Ops     = 512000000000
+    seconds    = 5.57957
+    GFlops     = 91.7633
+
+Single-Precision - 128-bit SSE - Multiply:
+    Dependency Chains = 8
+    Result     = 345.6
+    FP Ops     = 1024000000000
+    seconds    = 5.36473
+    GFlops     = 190.876
+
+Single-Precision - 128-bit SSE - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 595.2
+    FP Ops     = 1536000000000
+    seconds    = 5.84169
+    GFlops     = 262.938
+
+Double-Precision - 128-bit SSE2 - Add/Sub:
+    Dependency Chains  = 4
+    Result     = 73.6
+    FP Ops     = 256000000000
+    seconds    = 4.86839
+    GFlops     = 52.5841
+
+Double-Precision - 128-bit SSE2 - Multiply:
+    Dependency Chains = 8
+    Result     = 172.8
+    FP Ops     = 512000000000
+    seconds    = 7.79251
+    GFlops     = 65.7042
+
+Double-Precision - 128-bit SSE2 - Multiply + Add:
+    Dependency Chains = 12
+    Result     = 297.6
+    FP Ops     = 768000000000
+    seconds    = 9.74007
+    GFlops     = 78.8495
+
