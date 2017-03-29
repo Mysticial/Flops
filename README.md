@@ -37,6 +37,9 @@ Here is a list of recommended binaries for each processor line.
     - Intel Haswell (2013)
     - Intel Broadwell (2014)
 
+ - `x64-KnightsLanding`
+    - Intel Knights Landing (2016)
+
 x64 is strongly recommended, but not required. The benchmark is optimized for 16 SIMD registers and may not compile well on x86.
 
 -----
@@ -44,8 +47,9 @@ x64 is strongly recommended, but not required. The benchmark is optimized for 16
 **How to Compile: (version 2)**
 
 **Windows:**
- 1. Have Visual Studio 2013 installed at the default path.
+ 1. Have Visual Studio 2015 installed at the default path.
  2. Run (or double-click) on `compile_windows_vsc.cmd`.
+ 3. You will need Intel Compiler 2017 to build the Knights Landing AVX512 binary.
 
 **Linux:**
  1. Run `compile_linux_gcc.sh`.
