@@ -1,8 +1,8 @@
-/* arch_2015_skylake.h
+/* arch_2016_KnightsLanding.h
  * 
  * Author           : Alexander J. Yee
  * Date Created     : 07/10/2014
- * Last Modified    : 07/10/2014
+ * Last Modified    : 03/28/2017
  * 
  * 
  *      Since this is a future processors, the benchmarks here
@@ -32,7 +32,7 @@
 namespace flops{
 
     void run_benchmark(largeint_t iterations, size_t threads){
-        cout << "Running Benchmarks for Intel Skylake..." << endl;
+        cout << "Running Benchmarks for Intel KnightsLanding..." << endl;
         cout << endl;
 
         //  128-bit

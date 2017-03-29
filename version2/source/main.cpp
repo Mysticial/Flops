@@ -7,8 +7,8 @@
  */
 
 #if 0
-#elif ArchSkylake
-#include "arch/arch_2015_Skylake.h"
+#elif ArchKnightsLanding
+#include "arch/arch_2016_KnightsLanding.h"
 #elif ArchHaswell
 #include "arch/arch_2013_Haswell.h"
 #elif ArchPiledriver

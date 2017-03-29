@@ -102,21 +102,21 @@
     <ClInclude Include="..\source\tools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\arch\arch_2015_Skylake.h">
-      <Filter>Header Files\arch</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\bench_512\bench_f32v4_AVX512.h">
       <Filter>Header Files\bench_512</Filter>
     </ClInclude>
     <ClInclude Include="..\source\bench_512\bench_f64v3_AVX512.h">
       <Filter>Header Files\bench_512</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\arch\arch_2016_KnightsLanding.h">
+      <Filter>Header Files\arch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\main.cpp">
+    <ClCompile Include="..\source\tools.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\tools.c">
+    <ClCompile Include="..\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

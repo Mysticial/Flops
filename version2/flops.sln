@@ -17,8 +17,8 @@ Global
 		12-Piledriver|x64 = 12-Piledriver|x64
 		13-Haswell|Win32 = 13-Haswell|Win32
 		13-Haswell|x64 = 13-Haswell|x64
-		15-Skylake|Win32 = 15-Skylake|Win32
-		15-Skylake|x64 = 15-Skylake|x64
+		16-KnightsLanding|Win32 = 16-KnightsLanding|Win32
+		16-KnightsLanding|x64 = 16-KnightsLanding|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.06-Core2|Win32.ActiveCfg = 06-Core2|Win32
@@ -41,10 +41,10 @@ Global
 		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.13-Haswell|Win32.Build.0 = 13-Haswell|Win32
 		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.13-Haswell|x64.ActiveCfg = 13-Haswell|x64
 		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.13-Haswell|x64.Build.0 = 13-Haswell|x64
-		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.15-Skylake|Win32.ActiveCfg = 15-Skylake|Win32
-		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.15-Skylake|Win32.Build.0 = 15-Skylake|Win32
-		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.15-Skylake|x64.ActiveCfg = 15-Skylake|x64
-		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.15-Skylake|x64.Build.0 = 15-Skylake|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.16-KnightsLanding|Win32.ActiveCfg = 16-KnightsLanding|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.16-KnightsLanding|Win32.Build.0 = 16-KnightsLanding|Win32
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.16-KnightsLanding|x64.ActiveCfg = 16-KnightsLanding|x64
+		{23CC5708-F78A-4471-9788-6E21F9B1D3EF}.16-KnightsLanding|x64.Build.0 = 16-KnightsLanding|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
