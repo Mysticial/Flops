@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flops", "Flops\Flops.vcxproj", "{50987581-C913-4C4C-8540-A5A35AD06990}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		11-Bulldozer|x64 = 11-Bulldozer|x64
+		11-Bulldozer|x86 = 11-Bulldozer|x86
+		12-Piledriver|x64 = 12-Piledriver|x64
+		12-Piledriver|x86 = 12-Piledriver|x86
+		13-Haswell|x64 = 13-Haswell|x64
+		13-Haswell|x86 = 13-Haswell|x86
+		17-Zen|x64 = 17-Zen|x64
+		17-Zen|x86 = 17-Zen|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x64.ActiveCfg = 11-Bulldozer|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x64.Build.0 = 11-Bulldozer|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x86.ActiveCfg = 11-Bulldozer|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x86.Build.0 = 11-Bulldozer|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x64.ActiveCfg = 12-Piledriver|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x64.Build.0 = 12-Piledriver|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x86.ActiveCfg = 12-Piledriver|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x86.Build.0 = 12-Piledriver|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.13-Haswell|x64.ActiveCfg = 13-Haswell|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.13-Haswell|x64.Build.0 = 13-Haswell|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.13-Haswell|x86.ActiveCfg = 13-Haswell|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.13-Haswell|x86.Build.0 = 13-Haswell|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x64.ActiveCfg = 17-Zen|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x64.Build.0 = 17-Zen|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x86.ActiveCfg = 17-Zen|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x86.Build.0 = 17-Zen|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Debug|x64.ActiveCfg = Debug|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Debug|x64.Build.0 = Debug|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Debug|x86.ActiveCfg = Debug|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Debug|x86.Build.0 = Debug|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Release|x64.ActiveCfg = Release|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Release|x64.Build.0 = Release|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Release|x86.ActiveCfg = Release|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

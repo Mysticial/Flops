@@ -1,0 +1,26 @@
+
+#include <thread>
+
+#if 0
+#elif x64_2017_Zen
+#include "Arch/2017_Zen.ipp"
+#elif x64_2013_Haswell
+#include "Arch/2013_Haswell.ipp"
+#elif x64_2012_Piledriver
+#include "Arch/2012_Piledriver.ipp"
+#elif x64_2012_Bulldozer
+#include "Arch/2011_Bulldozer.ipp"
+#endif
+
+
+
+int main(){
+
+    Flops::run(1);
+    Flops::run(std::thread::hardware_concurrency());
+
+
+#if _WIN32
+    system("pause");
+#endif
+}
