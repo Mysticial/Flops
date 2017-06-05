@@ -28,7 +28,7 @@ namespace Flops{
 class f32v4_Mul_AVX512_c12x4 : public Benchmark{
 public:
     f32v4_Mul_AVX512_c12x4()
-        : Benchmark(48 * 8)
+        : Benchmark(48 * 16)
     {}
     virtual double run_kernel(size_t iterations) const override{
         const __m512 mul0 = _mm512_set1_ps(1.4142135623730950488f);

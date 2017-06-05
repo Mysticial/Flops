@@ -23,7 +23,7 @@ namespace Flops{
 class f64v3_Add_AVX512_c8x4 : public Benchmark{
 public:
     f64v3_Add_AVX512_c8x4()
-        : Benchmark(32 * 4)
+        : Benchmark(32 * 8)
     {}
     virtual double run_kernel(size_t iterations) const override{
         const __m512d add0 = _mm512_set1_pd(1.4142135623730950488);
