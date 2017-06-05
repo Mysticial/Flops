@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Arch">
       <UniqueIdentifier>{b95bdb3f-cf3b-486a-a0de-590062192c4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\512">
+      <UniqueIdentifier>{2508a89e-8d68-446d-981a-2cb731db6b1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Main.cpp">
@@ -98,6 +101,30 @@
     <ClInclude Include="..\Source\256\f64v2_FMA_FMA4_c12x4.h">
       <Filter>Source Files\256</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c8x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c8x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c12x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c12x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c12x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c12x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c6u4_c4u6.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c6u4_c4u6.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Arch\2017_Zen.ipp">
@@ -110,6 +137,9 @@
       <Filter>Source Files\Arch</Filter>
     </None>
     <None Include="..\Source\Arch\2011_Bulldozer.ipp">
+      <Filter>Source Files\Arch</Filter>
+    </None>
+    <None Include="..\Source\Arch\2016_KnightsLanding.ipp">
       <Filter>Source Files\Arch</Filter>
     </None>
   </ItemGroup>

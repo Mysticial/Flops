@@ -16,8 +16,8 @@
 #include <emmintrin.h>
 #include "../Benchmark.h"
 
-#if __INTEL_COMPILER
-#error "The Intel Compiler does a shit job of optimizing this."
+#if __INTEL_COMPILER && !(defined x64_2016_KnightsLanding) && !(defined x64_2017_Skylake)
+#warning "The Intel Compiler does a shit job of optimizing this."
 #endif
 
 namespace Flops{
