@@ -124,7 +124,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='16-KnightsLanding|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>Intel C++ Compiler XE 15.0</PlatformToolset>
+    <PlatformToolset>Intel C++ Compiler 17.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -698,14 +698,20 @@
     <ClInclude Include="..\source\bench_128\bench_f64v1_FMA3.h" />
     <ClInclude Include="..\source\bench_128\bench_f64v1_FMA4.h" />
     <ClInclude Include="..\source\bench_128\bench_f64v1_SSE2.h" />
+    <ClInclude Include="..\source\bench_128\f32v2_Reduce_SSE.h" />
+    <ClInclude Include="..\source\bench_128\f64v1_Reduce_SSE2.h" />
     <ClInclude Include="..\source\bench_256\bench_f32v3_AVX.h" />
     <ClInclude Include="..\source\bench_256\bench_f32v3_FMA3.h" />
     <ClInclude Include="..\source\bench_256\bench_f32v3_FMA4.h" />
     <ClInclude Include="..\source\bench_256\bench_f64v2_AVX.h" />
     <ClInclude Include="..\source\bench_256\bench_f64v2_FMA3.h" />
     <ClInclude Include="..\source\bench_256\bench_f64v2_FMA4.h" />
+    <ClInclude Include="..\source\bench_256\f32v3_Reduce_AVX.h" />
+    <ClInclude Include="..\source\bench_256\f64v2_Reduce_AVX.h" />
     <ClInclude Include="..\source\bench_512\bench_f32v4_AVX512.h" />
     <ClInclude Include="..\source\bench_512\bench_f64v3_AVX512.h" />
+    <ClInclude Include="..\source\bench_512\f32v4_Reduce_AVX512.h" />
+    <ClInclude Include="..\source\bench_512\f64v3_Reduce_AVX512.h" />
     <ClInclude Include="..\source\globals.h" />
     <ClInclude Include="..\source\macros\macro_add.h" />
     <ClInclude Include="..\source\macros\macro_fma.h" />

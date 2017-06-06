@@ -111,6 +111,24 @@
     <ClInclude Include="..\source\arch\arch_2016_KnightsLanding.h">
       <Filter>Header Files\arch</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\bench_128\f32v2_Reduce_SSE.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_128\f64v1_Reduce_SSE2.h">
+      <Filter>Header Files\bench_128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\f32v3_Reduce_AVX.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_256\f64v2_Reduce_AVX.h">
+      <Filter>Header Files\bench_256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_512\f32v4_Reduce_AVX512.h">
+      <Filter>Header Files\bench_512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\bench_512\f64v3_Reduce_AVX512.h">
+      <Filter>Header Files\bench_512</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\tools.c">

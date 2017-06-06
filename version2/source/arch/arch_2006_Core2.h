@@ -10,7 +10,7 @@
 #include "../bench_128/bench_f32v2_SSE.h"
 #include "../bench_128/bench_f64v1_SSE2.h"
 
-namespace flops{
+namespace Flops{
 
     void run_benchmark(largeint_t iterations, size_t threads){
         cout << "Running Benchmarks for Intel Core 2..." << endl;

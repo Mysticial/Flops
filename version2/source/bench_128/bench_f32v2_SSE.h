@@ -22,20 +22,11 @@
 #include "../macros/macro_add.h"
 #include "../macros/macro_mul.h"
 #include "../macros/macro_mac.h"
-namespace flops{
+#include "f32v2_Reduce_SSE.h"
+namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//  Reduction
-float reduce_f32v2_SSE(__m128 x){
-    union{
-        __m128 v;
-        float s[4];
-    };
-    v = x;
-    return (s[0] + s[1]) + (s[2] + s[3]);
-}
 ////////////////////////////////////////////////////////////////////////////////
 //  Add
 class bench_add_f32v2_SSE_chains4 : public benchmark{
@@ -62,7 +53,7 @@ class bench_add_f32v2_SSE_chains4 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (16 ops / macro)
         return iterations * 4 * 16;
@@ -96,7 +87,7 @@ class bench_add_f32v2_SSE_chains8 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (32 ops / macro)
         return iterations * 4 * 32;
@@ -134,7 +125,7 @@ class bench_add_f32v2_SSE_chains12 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;
@@ -170,7 +161,7 @@ class bench_mul_f32v2_SSE_chains8 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (32 ops / macro)
         return iterations * 4 * 32;
@@ -208,7 +199,7 @@ class bench_mul_f32v2_SSE_chains12 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;
@@ -250,7 +241,7 @@ class bench_mac_f32v2_SSE_chains12 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;

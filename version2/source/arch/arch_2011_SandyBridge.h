@@ -14,7 +14,7 @@
 #include "../bench_256/bench_f32v3_AVX.h"
 #include "../bench_256/bench_f64v2_AVX.h"
 
-namespace flops{
+namespace Flops{
 
     void run_benchmark(largeint_t iterations, size_t threads){
         cout << "Running Benchmarks for Intel Sandy Bridge..." << endl;

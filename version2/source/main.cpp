@@ -21,7 +21,7 @@
 #include "arch/arch_2006_Core2.h"
 #endif
 
-using namespace flops;
+using namespace Flops;
 
 int main(){
     run_benchmark(1000000000, omp_get_max_threads());

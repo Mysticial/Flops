@@ -29,7 +29,7 @@
 #include "../bench_512/bench_f32v4_AVX512.h"
 #include "../bench_512/bench_f64v3_AVX512.h"
 
-namespace flops{
+namespace Flops{
 
     void run_benchmark(largeint_t iterations, size_t threads){
         cout << "Running Benchmarks for Intel KnightsLanding..." << endl;

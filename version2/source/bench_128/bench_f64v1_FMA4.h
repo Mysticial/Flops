@@ -18,8 +18,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 #include <ammintrin.h>
 #include "../macros/macro_fma.h"
+#include "f64v1_Reduce_SSE2.h"
 #include "bench_f64v1_SSE2.h"
-namespace flops{
+namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +58,7 @@ class bench_fma_linear_f64v1_FMA4_chains12 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;

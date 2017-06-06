@@ -22,25 +22,11 @@
 #include "../macros/macro_add.h"
 #include "../macros/macro_mul.h"
 #include "../macros/macro_mac.h"
-namespace flops{
+#include "f32v3_Reduce_AVX.h"
+namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//  Reduction
-float reduce_f32v3_AVX(__m256 x){
-    union{
-        __m256 v;
-        float s[8];
-    };
-    v = x;
-
-    float result = 0;
-    for (int c = 0; c < 8; c++){
-        result += s[c];
-    }
-    return result;
-}
 ////////////////////////////////////////////////////////////////////////////////
 //  Add
 class bench_add_f32v3_AVX_chains4 : public benchmark{
@@ -67,7 +53,7 @@ class bench_add_f32v3_AVX_chains4 : public benchmark{
             _mm256_add_ps,
             r0, r1, r2, r3
         );
-        result = reduce_f32v3_AVX(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (16 ops / macro)
         return iterations * 8 * 16;
@@ -101,7 +87,7 @@ class bench_add_f32v3_AVX_chains8 : public benchmark{
             _mm256_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f32v3_AVX(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (32 ops / macro)
         return iterations * 8 * 32;
@@ -137,7 +123,7 @@ class bench_mul_f32v3_AVX_chains8 : public benchmark{
             _mm256_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f32v3_AVX(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (32 ops / macro)
         return iterations * 8 * 32;
@@ -175,7 +161,7 @@ class bench_mul_f32v3_AVX_chains12 : public benchmark{
             _mm256_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v3_AVX(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (48 ops / macro)
         return iterations * 8 * 48;
@@ -217,7 +203,7 @@ class bench_mac_f32v3_AVX_chains12 : public benchmark{
             _mm256_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v3_AVX(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (48 ops / macro)
         return iterations * 8 * 48;

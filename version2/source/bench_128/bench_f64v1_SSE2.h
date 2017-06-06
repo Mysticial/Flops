@@ -22,15 +22,11 @@
 #include "../macros/macro_add.h"
 #include "../macros/macro_mul.h"
 #include "../macros/macro_mac.h"
-namespace flops{
+#include "f64v1_Reduce_SSE2.h"
+namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//  Reduction
-double reduce_f64v1_SSE2(__m128d x){
-    return _mm_cvtsd_f64(x) + _mm_cvtsd_f64(_mm_unpackhi_pd(x, x));
-}
 ////////////////////////////////////////////////////////////////////////////////
 //  Add
 class bench_add_f64v1_SSE2_chains4 : public benchmark{
@@ -57,7 +53,7 @@ class bench_add_f64v1_SSE2_chains4 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (2 ops / vector) * (16 ops / macro)
         return iterations * 2 * 16;
@@ -91,7 +87,7 @@ class bench_add_f64v1_SSE2_chains8 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (2 ops / vector) * (32 ops / macro)
         return iterations * 2 * 32;
@@ -127,7 +123,7 @@ class bench_mul_f64v1_SSE2_chains8 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (2 ops / vector) * (32 ops / macro)
         return iterations * 2 * 32;
@@ -165,7 +161,7 @@ class bench_mul_f64v1_SSE2_chains12 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (2 ops / vector) * (48 ops / macro)
         return iterations * 2 * 48;
@@ -207,7 +203,7 @@ class bench_mac_f64v1_SSE2_chains12 : public benchmark{
             _mm_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f64v1_SSE2(r0);
+        result = reduce(r0);
 
         //  (2 ops / vector) * (48 ops / macro)
         return iterations * 2 * 48;

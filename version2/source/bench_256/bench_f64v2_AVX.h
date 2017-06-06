@@ -22,25 +22,11 @@
 #include "../macros/macro_add.h"
 #include "../macros/macro_mul.h"
 #include "../macros/macro_mac.h"
-namespace flops{
+#include "f64v2_Reduce_AVX.h"
+namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//  Reduction
-double reduce_f64v2_AVX(__m256d x){
-    union{
-        __m256d v;
-        double s[8];
-    };
-    v = x;
-
-    double result = 0;
-    for (int c = 0; c < 4; c++){
-        result += s[c];
-    }
-    return result;
-}
 ////////////////////////////////////////////////////////////////////////////////
 //  Add
 class bench_add_f64v2_AVX_chains4 : public benchmark{
@@ -67,7 +53,7 @@ class bench_add_f64v2_AVX_chains4 : public benchmark{
             _mm256_add_pd,
             r0, r1, r2, r3
         );
-        result = reduce_f64v2_AVX(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (16 ops / macro)
         return iterations * 4 * 16;
@@ -101,7 +87,7 @@ class bench_add_f64v2_AVX_chains8 : public benchmark{
             _mm256_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f64v2_AVX(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (32 ops / macro)
         return iterations * 4 * 32;
@@ -137,7 +123,7 @@ class bench_mul_f64v2_AVX_chains8 : public benchmark{
             _mm256_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7
         );
-        result = reduce_f64v2_AVX(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (32 ops / macro)
         return iterations * 4 * 32;
@@ -175,7 +161,7 @@ class bench_mul_f64v2_AVX_chains12 : public benchmark{
             _mm256_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f64v2_AVX(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;
@@ -217,7 +203,7 @@ class bench_mac_f64v2_AVX_chains12 : public benchmark{
             _mm256_add_pd,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f64v2_AVX(r0);
+        result = reduce(r0);
 
         //  (4 ops / vector) * (48 ops / macro)
         return iterations * 4 * 48;
