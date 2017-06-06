@@ -32,7 +32,7 @@
 namespace Flops{
 
     void run_benchmark(largeint_t iterations, size_t threads){
-        cout << "Running Benchmarks for Intel KnightsLanding..." << endl;
+        cout << "Running Benchmarks for AVX512F..." << endl;
         cout << endl;
 
         //  128-bit
