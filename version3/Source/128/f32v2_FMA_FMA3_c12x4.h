@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <immintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f64v1_Reduce_SSE2.h"
 namespace Flops{
@@ -30,18 +31,18 @@ public:
         const __m128 mul0 = _mm_set1_ps(1.4142135623730950488f);
         const __m128 mul1 = _mm_set1_ps(1.7320508075688772935f);
 
-        __m128 r0 = _mm_set1_ps(1.0f);
-        __m128 r1 = _mm_set1_ps(1.1f);
-        __m128 r2 = _mm_set1_ps(1.2f);
-        __m128 r3 = _mm_set1_ps(1.3f);
-        __m128 r4 = _mm_set1_ps(1.4f);
-        __m128 r5 = _mm_set1_ps(1.5f);
-        __m128 r6 = _mm_set1_ps(1.6f);
-        __m128 r7 = _mm_set1_ps(1.7f);
-        __m128 r8 = _mm_set1_ps(1.8f);
-        __m128 r9 = _mm_set1_ps(1.9f);
-        __m128 rA = _mm_set1_ps(2.0f);
-        __m128 rB = _mm_set1_ps(2.1f);
+        __m128 r0 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r1 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r2 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r3 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r4 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r5 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r6 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r7 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r8 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r9 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 rA = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 rB = _mm_set1_ps((float)(rdtsc() % 256));
         do{
             r0 = _mm_fmadd_ps(mul0, mul1, r0);
             r1 = _mm_fmadd_ps(mul0, mul1, r1);

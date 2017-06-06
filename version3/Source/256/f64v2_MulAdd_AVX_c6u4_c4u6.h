@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <immintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f64v2_Reduce_AVX.h"
 namespace Flops{
@@ -31,16 +32,16 @@ public:
         const __m256d mul1 = _mm256_set1_pd(0.70710678118654752440);
 
         //  6 multiply chains and 4 add chains
-        __m256d r0 = _mm256_set1_pd(1.0);
-        __m256d r1 = _mm256_set1_pd(1.1);
-        __m256d r2 = _mm256_set1_pd(1.2);
-        __m256d r3 = _mm256_set1_pd(1.3);
-        __m256d r4 = _mm256_set1_pd(1.4);
-        __m256d r5 = _mm256_set1_pd(1.5);
-        __m256d r6 = _mm256_set1_pd(1.6);
-        __m256d r7 = _mm256_set1_pd(1.7);
-        __m256d r8 = _mm256_set1_pd(1.8);
-        __m256d r9 = _mm256_set1_pd(1.9);
+        __m256d r0 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r1 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r2 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r3 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r4 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r5 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r6 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r7 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r8 = _mm256_set1_pd((double)(rdtsc() % 256));
+        __m256d r9 = _mm256_set1_pd((double)(rdtsc() % 256));
         do{
             r0 = _mm256_mul_pd(r0, mul0);
             r6 = _mm256_add_pd(r6, mul0);

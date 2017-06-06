@@ -528,7 +528,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;x64_2012_Bulldozer;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;x64_2011_Bulldozer;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>
       </SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -578,17 +578,18 @@
     <ClInclude Include="..\Source\256\f64v2_MulAdd_AVX_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\256\f64v2_Mul_AVX_c12x4.h" />
     <ClInclude Include="..\Source\256\f64v2_Reduce_AVX.h" />
-    <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c8x4.h" />
-    <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c12x4.h" />
-    <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c6u4_c4u6.h" />
-    <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c12x4.h" />
+    <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c16x4.h" />
+    <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c24x4.h" />
+    <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c12u8_c8u12.h" />
+    <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c24x4.h" />
     <ClInclude Include="..\Source\512\f32v4_Reduce_AVX512.h" />
-    <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c8x4.h" />
-    <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c12x4.h" />
-    <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c6u4_c4u6.h" />
-    <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c12x4.h" />
+    <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c16x4.h" />
+    <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c24x4.h" />
+    <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c12u8_c8u12.h" />
+    <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c24x4.h" />
     <ClInclude Include="..\Source\512\f64v3_Reduce_AVX512.h" />
     <ClInclude Include="..\Source\Benchmark.h" />
+    <ClInclude Include="..\Source\Tools.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Arch\2011_Bulldozer.ipp" />

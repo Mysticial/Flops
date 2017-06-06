@@ -101,30 +101,6 @@
     <ClInclude Include="..\Source\256\f64v2_FMA_FMA4_c12x4.h">
       <Filter>Source Files\256</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c8x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c8x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c12x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c12x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c12x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c12x4.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c6u4_c4u6.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c6u4_c4u6.h">
-      <Filter>Source Files\512</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\128\f32v2_Reduce_SSE.h">
       <Filter>Source Files\128</Filter>
     </ClInclude>
@@ -141,6 +117,33 @@
       <Filter>Source Files\512</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\512\f64v3_Reduce_AVX512.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Tools.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c16x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c16x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c24x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c24x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c24x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c24x4.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c12u8_c8u12.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c12u8_c8u12.h">
       <Filter>Source Files\512</Filter>
     </ClInclude>
   </ItemGroup>

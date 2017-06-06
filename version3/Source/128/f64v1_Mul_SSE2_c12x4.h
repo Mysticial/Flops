@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <emmintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f64v1_Reduce_SSE2.h"
 
@@ -35,18 +36,18 @@ public:
         const __m128d mul0 = _mm_set1_pd(1.4142135623730950488);
         const __m128d mul1 = _mm_set1_pd(0.70710678118654752440);
 
-        __m128d r0 = _mm_set1_pd(1.0);
-        __m128d r1 = _mm_set1_pd(1.1);
-        __m128d r2 = _mm_set1_pd(1.2);
-        __m128d r3 = _mm_set1_pd(1.3);
-        __m128d r4 = _mm_set1_pd(1.4);
-        __m128d r5 = _mm_set1_pd(1.5);
-        __m128d r6 = _mm_set1_pd(1.6);
-        __m128d r7 = _mm_set1_pd(1.7);
-        __m128d r8 = _mm_set1_pd(1.8);
-        __m128d r9 = _mm_set1_pd(1.9);
-        __m128d rA = _mm_set1_pd(2.0);
-        __m128d rB = _mm_set1_pd(2.1);
+        __m128d r0 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r1 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r2 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r3 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r4 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r5 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r6 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r7 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r8 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d r9 = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d rA = _mm_set1_pd((double)(rdtsc() % 256));
+        __m128d rB = _mm_set1_pd((double)(rdtsc() % 256));
         do{
             r0 = _mm_mul_pd(r0, mul0);
             r1 = _mm_mul_pd(r1, mul0);

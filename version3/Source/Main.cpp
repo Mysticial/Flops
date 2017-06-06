@@ -10,7 +10,7 @@
 #include "Arch/2013_Haswell.ipp"
 #elif x64_2012_Piledriver
 #include "Arch/2012_Piledriver.ipp"
-#elif x64_2012_Bulldozer
+#elif x64_2011_Bulldozer
 #include "Arch/2011_Bulldozer.ipp"
 #endif
 

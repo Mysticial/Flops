@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <xmmintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f32v2_Reduce_SSE.h"
 namespace Flops{
@@ -30,14 +31,14 @@ public:
         const __m128 add0 = _mm_set1_ps(1.4142135623730950488f);
         const __m128 sub0 = _mm_set1_ps(1.414213562373095f);
 
-        __m128 r0 = _mm_set1_ps(1.0f);
-        __m128 r1 = _mm_set1_ps(1.1f);
-        __m128 r2 = _mm_set1_ps(1.2f);
-        __m128 r3 = _mm_set1_ps(1.3f);
-        __m128 r4 = _mm_set1_ps(1.4f);
-        __m128 r5 = _mm_set1_ps(1.5f);
-        __m128 r6 = _mm_set1_ps(1.6f);
-        __m128 r7 = _mm_set1_ps(1.7f);
+        __m128 r0 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r1 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r2 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r3 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r4 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r5 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r6 = _mm_set1_ps((float)(rdtsc() % 256));
+        __m128 r7 = _mm_set1_ps((float)(rdtsc() % 256));
         do{
             r0 = _mm_add_ps(r0, add0);
             r1 = _mm_add_ps(r1, add0);

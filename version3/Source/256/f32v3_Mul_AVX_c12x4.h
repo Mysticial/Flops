@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <immintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f32v3_Reduce_AVX.h"
 
@@ -35,18 +36,18 @@ public:
         const __m256 mul0 = _mm256_set1_ps(1.4142135623730950488f);
         const __m256 mul1 = _mm256_set1_ps(0.70710678118654752440f);
 
-        __m256 r0 = _mm256_set1_ps(1.0f);
-        __m256 r1 = _mm256_set1_ps(1.1f);
-        __m256 r2 = _mm256_set1_ps(1.2f);
-        __m256 r3 = _mm256_set1_ps(1.3f);
-        __m256 r4 = _mm256_set1_ps(1.4f);
-        __m256 r5 = _mm256_set1_ps(1.5f);
-        __m256 r6 = _mm256_set1_ps(1.6f);
-        __m256 r7 = _mm256_set1_ps(1.7f);
-        __m256 r8 = _mm256_set1_ps(1.8f);
-        __m256 r9 = _mm256_set1_ps(1.9f);
-        __m256 rA = _mm256_set1_ps(2.0f);
-        __m256 rB = _mm256_set1_ps(2.1f);
+        __m256 r0 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r1 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r2 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r3 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r4 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r5 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r6 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r7 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r8 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r9 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 rA = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 rB = _mm256_set1_ps((float)(rdtsc() % 256));
         do{
             r0 = _mm256_mul_ps(r0, mul0);
             r1 = _mm256_mul_ps(r1, mul0);

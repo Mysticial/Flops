@@ -14,6 +14,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //  Dependencies
 #include <immintrin.h>
+#include "../Tools.h"
 #include "../Benchmark.h"
 #include "f32v3_Reduce_AVX.h"
 namespace Flops{
@@ -30,14 +31,14 @@ public:
         const __m256 add0 = _mm256_set1_ps(1.4142135623730950488f);
         const __m256 sub0 = _mm256_set1_ps(1.414213562373095f);
 
-        __m256 r0 = _mm256_set1_ps(1.0f);
-        __m256 r1 = _mm256_set1_ps(1.1f);
-        __m256 r2 = _mm256_set1_ps(1.2f);
-        __m256 r3 = _mm256_set1_ps(1.3f);
-        __m256 r4 = _mm256_set1_ps(1.4f);
-        __m256 r5 = _mm256_set1_ps(1.5f);
-        __m256 r6 = _mm256_set1_ps(1.6f);
-        __m256 r7 = _mm256_set1_ps(1.7f);
+        __m256 r0 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r1 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r2 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r3 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r4 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r5 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r6 = _mm256_set1_ps((float)(rdtsc() % 256));
+        __m256 r7 = _mm256_set1_ps((float)(rdtsc() % 256));
         do{
             r0 = _mm256_add_ps(r0, add0);
             r1 = _mm256_add_ps(r1, add0);
