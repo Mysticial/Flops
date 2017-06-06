@@ -9,5 +9,5 @@ g++ Source/*.cpp -o "${basepath}2011-Bulldozer"       $flags -march=bdver1      
 g++ Source/*.cpp -o "${basepath}2012-Piledriver"      $flags -march=bdver2         -D "x64_2012_Piledriver" #
 g++ Source/*.cpp -o "${basepath}2013-Haswell"         $flags -march=haswell        -D "x64_2013_Haswell" #
 g++ Source/*.cpp -o "${basepath}2016-KnightsLanding"  $flags -march=knl            -D "x64_2016_KnightsLanding" #
-g++ Source/*.cpp -o "${basepath}2017-SkylakePurley "  $flags -march=skylake-avx512 -D "x64_2016_KnightsLanding" #
+g++ Source/*.cpp -o "${basepath}2017-SkylakePurley "  $flags -march=skylake-avx512 -D "x64_2017_SkylakePurley" #
 #

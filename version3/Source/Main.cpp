@@ -2,6 +2,8 @@
 #include <thread>
 
 #if 0
+#elif x64_2017_SkylakePurley
+#include "Arch/2017_SkylakePurley.ipp"
 #elif x64_2016_KnightsLanding
 #include "Arch/2016_KnightsLanding.ipp"
 #elif x64_2017_Zen

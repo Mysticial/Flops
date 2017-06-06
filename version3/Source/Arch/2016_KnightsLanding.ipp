@@ -46,7 +46,11 @@ namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 void run(size_t threads){
+#ifdef x64_2017_SkylakePurley
+	std::cout << "Running Skylake Purley tuned binary with ";
+#else
 	std::cout << "Running Knights Landing tuned binary with ";
+#endif
 	if (threads == 1){
 		std::cout << "1 thread..." << std::endl;
 	}else{
