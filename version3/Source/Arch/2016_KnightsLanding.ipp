@@ -58,7 +58,7 @@ void run(size_t threads){
 	}
 	std::cout << std::endl;
 
-#if 0
+
     f32v2_Add_SSE_c8x4().run("Single-Precision - 128-bit AVX - Add/Sub", threads);
     f64v1_Add_SSE2_c8x4().run("Double-Precision - 128-bit AVX - Add/Sub", threads);
 
@@ -83,7 +83,6 @@ void run(size_t threads){
 
     f32v3_FMA_FMA3_c12x4().run("Single-Precision - 256-bit FMA3 - Fused Multiply Add", threads);
     f64v2_FMA_FMA3_c12x4().run("Double-Precision - 256-bit FMA3 - Fused Multiply Add", threads);
-#endif
 
 
     f32v4_Add_AVX512_c16x4().run("Single-Precision - 512-bit AVX512 - Add/Sub", threads);
