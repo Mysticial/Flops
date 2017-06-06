@@ -1,6 +1,6 @@
 mkdir "binaries-linux" #
 #
-basepath="binaries-linux/x64-" #
+basepath="binaries-linux/" #
 flags="-O2 -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive" #
 #
 #g++ Source/*.cpp -o "${basepath}2006-Core2"           $flags -march=core2          -D "x64_2006_Core2" #
