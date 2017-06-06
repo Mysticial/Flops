@@ -58,7 +58,7 @@ class bench_fma_linear_f32v2_FMA4_chains12 : public benchmark{
             _mm_add_ps,
             r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, rA, rB
         );
-        result = reduce_f32v2_SSE(r0);
+        result = reduce(r0);
 
         //  (8 ops / vector) * (48 ops / macro)
         return iterations * 8 * 48;
