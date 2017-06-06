@@ -15,6 +15,7 @@
 //  Dependencies
 #include <xmmintrin.h>
 #include "../Benchmark.h"
+#include "f32v2_Reduce_SSE.h"
 namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -84,10 +85,7 @@ public:
         r1 = _mm_add_ps(r1, r3);
 
         r0 = _mm_add_ps(r0, r1);
-
-        r0 = _mm_add_ps(r0, _mm_unpackhi_ps(r0, r0));
-        r0 = _mm_add_ps(r0, _mm_shuffle_ps(r0, r0, 1));
-        return _mm_cvtss_f32(r0);
+        return reduce(r0);
     }
 };
 ////////////////////////////////////////////////////////////////////////////////

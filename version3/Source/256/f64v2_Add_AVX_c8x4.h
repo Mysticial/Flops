@@ -15,6 +15,7 @@
 //  Dependencies
 #include <immintrin.h>
 #include "../Benchmark.h"
+#include "f64v2_Reduce_AVX.h"
 namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -84,10 +85,7 @@ public:
         r1 = _mm256_add_pd(r1, r3);
 
         r0 = _mm256_add_pd(r0, r1);
-
-        __m128d x = _mm_add_pd(_mm256_castpd256_pd128(r0), _mm256_extractf128_pd(r0, 1));
-        x = _mm_add_pd(x, _mm_unpackhi_pd(x, x));
-        return _mm_cvtsd_f64(x);
+        return reduce(r0);
     }
 };
 ////////////////////////////////////////////////////////////////////////////////

@@ -16,6 +16,7 @@
 #include <emmintrin.h>
 #include <ammintrin.h>
 #include "../Benchmark.h"
+#include "f64v1_Reduce_SSE2.h"
 namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -109,9 +110,7 @@ public:
 
         r0 = _mm_add_pd(r0, r1);
         r0 = _mm_add_pd(r0, r2);
-
-        r0 = _mm_add_pd(r0, _mm_unpackhi_pd(r0, r0));
-        return _mm_cvtsd_f64(r0);
+        return reduce(r0);
     }
 };
 ////////////////////////////////////////////////////////////////////////////////

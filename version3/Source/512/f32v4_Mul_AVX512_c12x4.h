@@ -15,6 +15,7 @@
 //  Dependencies
 #include <immintrin.h>
 #include "../Benchmark.h"
+#include "f32v4_Reduce_AVX512.h"
 
 #if __INTEL_COMPILER && !(defined x64_2016_KnightsLanding) && !(defined x64_2017_Skylake)
 #warning "The Intel Compiler does a shit job of optimizing this."
@@ -113,15 +114,7 @@ public:
 
         r0 = _mm512_add_ps(r0, r1);
         r0 = _mm512_add_ps(r0, r2);
-
-        __m256 y = _mm256_add_ps(
-            _mm512_castps512_ps256(r0),
-            _mm256_castsi256_ps(_mm512_extracti64x4_epi64(_mm512_castps_si512(r0), 1))
-        );
-        __m128 x = _mm_add_ps(_mm256_castps256_ps128(y), _mm256_extractf128_ps(y, 1));
-        x = _mm_add_ps(x, _mm_unpackhi_ps(x, x));
-        x = _mm_add_ps(x, _mm_shuffle_ps(x, x, 1));
-        return _mm_cvtss_f32(x);
+        return reduce(r0);
     }
 };
 ////////////////////////////////////////////////////////////////////////////////

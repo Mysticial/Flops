@@ -125,6 +125,24 @@
     <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c6u4_c4u6.h">
       <Filter>Source Files\512</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\128\f32v2_Reduce_SSE.h">
+      <Filter>Source Files\128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\128\f64v1_Reduce_SSE2.h">
+      <Filter>Source Files\128</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\256\f32v3_Reduce_AVX.h">
+      <Filter>Source Files\256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\256\f64v2_Reduce_AVX.h">
+      <Filter>Source Files\256</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_Reduce_AVX512.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_Reduce_AVX512.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Arch\2017_Zen.ipp">

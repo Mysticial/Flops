@@ -559,11 +559,14 @@
     <ClInclude Include="..\Source\128\f32v2_MulAdd_SSE_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\128\f32v2_Mul_SSE_c12x4.h" />
     <ClInclude Include="..\Source\128\f32v2_Mul_SSE_c12x4_InlineASM.h" />
+    <ClInclude Include="..\Source\128\f32v2_Reduce_SSE.h" />
     <ClInclude Include="..\Source\128\f64v1_Add_SSE2_c8x4.h" />
     <ClInclude Include="..\Source\128\f64v1_FMA_FMA3_c12x4.h" />
     <ClInclude Include="..\Source\128\f64v1_FMA_FMA4_c12x4.h" />
     <ClInclude Include="..\Source\128\f64v1_MulAdd_SSE2_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\128\f64v1_Mul_SSE2_c12x4.h" />
+    <ClInclude Include="..\Source\128\f64v1_Reduce_SSE2.h" />
+    <ClInclude Include="..\Source\256\f32v3_Reduce_AVX.h" />
     <ClInclude Include="..\Source\256\f32v3_Add_AVX_c8x4.h" />
     <ClInclude Include="..\Source\256\f32v3_FMA_FMA4_c12x4.h" />
     <ClInclude Include="..\Source\256\f32v3_MulAdd_AVX_c6u4_c4u6.h" />
@@ -574,14 +577,17 @@
     <ClInclude Include="..\Source\256\f64v2_FMA_FMA4_c12x4.h" />
     <ClInclude Include="..\Source\256\f64v2_MulAdd_AVX_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\256\f64v2_Mul_AVX_c12x4.h" />
+    <ClInclude Include="..\Source\256\f64v2_Reduce_AVX.h" />
     <ClInclude Include="..\Source\512\f32v4_Add_AVX512_c8x4.h" />
     <ClInclude Include="..\Source\512\f32v4_FMA_AVX512_c12x4.h" />
     <ClInclude Include="..\Source\512\f32v4_MulAdd_AVX512_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\512\f32v4_Mul_AVX512_c12x4.h" />
+    <ClInclude Include="..\Source\512\f32v4_Reduce_AVX512.h" />
     <ClInclude Include="..\Source\512\f64v3_Add_AVX512_c8x4.h" />
     <ClInclude Include="..\Source\512\f64v3_FMA_AVX512_c12x4.h" />
     <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c6u4_c4u6.h" />
     <ClInclude Include="..\Source\512\f64v3_Mul_AVX512_c12x4.h" />
+    <ClInclude Include="..\Source\512\f64v3_Reduce_AVX512.h" />
     <ClInclude Include="..\Source\Benchmark.h" />
   </ItemGroup>
   <ItemGroup>
