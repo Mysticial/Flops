@@ -43,6 +43,9 @@ Here is a list of recommended binaries for each processor line.
  - `2016-KnightsLanding` (AVX512F)
     - Intel Knights Landing (2016)
 
+ - `2017-Zen` (AVX and FMA3)
+    - AMD Zen (2017)
+
  - `2017-SkylakePurley` (AVX512-F and AVX512-VL)
     - Intel Skylake Purley (2017)
 
