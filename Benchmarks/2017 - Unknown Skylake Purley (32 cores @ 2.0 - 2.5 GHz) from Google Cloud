@@ -1,0 +1,196 @@
+Running Skylake Purley tuned binary with 1 thread...
+
+Single-Precision - 128-bit AVX - Add/Sub
+    GFlops = 15.904
+    Result = 2.02376e+06
+
+Double-Precision - 128-bit AVX - Add/Sub
+    GFlops = 7.952
+    Result = 1.00995e+06
+
+Single-Precision - 128-bit AVX - Multiply
+    GFlops = 15.936
+    Result = 2.03498e+06
+
+Double-Precision - 128-bit AVX - Multiply
+    GFlops = 7.968
+    Result = 1.00712e+06
+
+Single-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 15.936
+    Result = 1.69085e+06
+
+Double-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 7.968
+    Result = 841756
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 31.872
+    Result = 2.02868e+06
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 15.936
+    Result = 1.01782e+06
+
+Single-Precision - 256-bit AVX - Add/Sub
+    GFlops = 31.808
+    Result = 4.06688e+06
+
+Double-Precision - 256-bit AVX - Add/Sub
+    GFlops = 15.936
+    Result = 2.02901e+06
+
+Single-Precision - 256-bit AVX - Multiply
+    GFlops = 31.872
+    Result = 4.06158e+06
+
+Double-Precision - 256-bit AVX - Multiply
+    GFlops = 15.936
+    Result = 2.02013e+06
+
+Single-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 31.872
+    Result = 3.34696e+06
+
+Double-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 15.936
+    Result = 1.70441e+06
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 63.744
+    Result = 4.0399e+06
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 31.872
+    Result = 2.00801e+06
+
+Single-Precision - 512-bit AVX512 - Add/Sub
+    GFlops = 63.744
+    Result = 8.11456e+06
+
+Double-Precision - 512-bit AVX512 - Add/Sub
+    GFlops = 31.872
+    Result = 4.03949e+06
+
+Single-Precision - 512-bit AVX512 - Multiply
+    GFlops = 63.36
+    Result = 8.0743e+06
+
+Double-Precision - 512-bit AVX512 - Multiply
+    GFlops = 31.872
+    Result = 4.05014e+06
+
+Single-Precision - 512-bit AVX512 - Multiply + Add
+    GFlops = 63.744
+    Result = 6.68723e+06
+
+Double-Precision - 512-bit AVX512 - Multiply + Add
+    GFlops = 31.872
+    Result = 3.3739e+06
+
+Single-Precision - 512-bit AVX512 - Fused Multiply Add
+    GFlops = 127.488
+    Result = 8.22848e+06
+
+Double-Precision - 512-bit AVX512 - Fused Multiply Add
+    GFlops = 63.744
+    Result = 4.03805e+06
+
+
+Running Skylake Purley tuned binary with 64 thread(s)...
+
+Single-Precision - 128-bit AVX - Add/Sub
+    GFlops = 683.36
+    Result = 8.68179e+07
+
+Double-Precision - 128-bit AVX - Add/Sub
+    GFlops = 263.568
+    Result = 3.35065e+07
+
+Single-Precision - 128-bit AVX - Multiply
+    GFlops = 527.616
+    Result = 6.69453e+07
+
+Double-Precision - 128-bit AVX - Multiply
+    GFlops = 263.88
+    Result = 3.34619e+07
+
+Single-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 527.136
+    Result = 5.58561e+07
+
+Double-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 263.64
+    Result = 2.79832e+07
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 1056.77
+    Result = 6.71142e+07
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 528.336
+    Result = 3.36188e+07
+
+Single-Precision - 256-bit AVX - Add/Sub
+    GFlops = 1054.14
+    Result = 1.34076e+08
+
+Double-Precision - 256-bit AVX - Add/Sub
+    GFlops = 527.52
+    Result = 6.68866e+07
+
+Single-Precision - 256-bit AVX - Multiply
+    GFlops = 1056.77
+    Result = 1.34416e+08
+
+Double-Precision - 256-bit AVX - Multiply
+    GFlops = 527.664
+    Result = 6.70251e+07
+
+Single-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 1055.33
+    Result = 1.12018e+08
+
+Double-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 527.52
+    Result = 5.59086e+07
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 2110.08
+    Result = 1.34046e+08
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 1055.33
+    Result = 6.69451e+07
+
+Single-Precision - 512-bit AVX512 - Add/Sub
+    GFlops = 2112.26
+    Result = 2.68216e+08
+
+Double-Precision - 512-bit AVX512 - Add/Sub
+    GFlops = 1056
+    Result = 1.34131e+08
+
+Single-Precision - 512-bit AVX512 - Multiply
+    GFlops = 2117.38
+    Result = 2.69031e+08
+
+Double-Precision - 512-bit AVX512 - Multiply
+    GFlops = 1059.26
+    Result = 1.34601e+08
+
+Single-Precision - 512-bit AVX512 - Multiply + Add
+    GFlops = 2118.14
+    Result = 2.24393e+08
+
+Double-Precision - 512-bit AVX512 - Multiply + Add
+    GFlops = 1058.5
+    Result = 1.12102e+08
+
+Single-Precision - 512-bit AVX512 - Fused Multiply Add
+    GFlops = 4242.43
+    Result = 2.69409e+08
+
+Double-Precision - 512-bit AVX512 - Fused Multiply Add
+    GFlops = 2115.07
+    Result = 1.34365e+08
