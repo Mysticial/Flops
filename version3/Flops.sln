@@ -7,14 +7,20 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Flops", "Flops\Flops.vcxpro
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		06-Core2|x64 = 06-Core2|x64
+		06-Core2|x86 = 06-Core2|x86
 		11-Bulldozer|x64 = 11-Bulldozer|x64
 		11-Bulldozer|x86 = 11-Bulldozer|x86
+		11-SandyBridge|x64 = 11-SandyBridge|x64
+		11-SandyBridge|x86 = 11-SandyBridge|x86
 		12-Piledriver|x64 = 12-Piledriver|x64
 		12-Piledriver|x86 = 12-Piledriver|x86
 		13-Haswell|x64 = 13-Haswell|x64
 		13-Haswell|x86 = 13-Haswell|x86
 		16-KnightsLanding|x64 = 16-KnightsLanding|x64
 		16-KnightsLanding|x86 = 16-KnightsLanding|x86
+		17-SkylakePurley|x64 = 17-SkylakePurley|x64
+		17-SkylakePurley|x86 = 17-SkylakePurley|x86
 		17-Zen|x64 = 17-Zen|x64
 		17-Zen|x86 = 17-Zen|x86
 		Debug|x64 = Debug|x64
@@ -23,10 +29,18 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50987581-C913-4C4C-8540-A5A35AD06990}.06-Core2|x64.ActiveCfg = 06-Core2|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.06-Core2|x64.Build.0 = 06-Core2|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.06-Core2|x86.ActiveCfg = 06-Core2|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.06-Core2|x86.Build.0 = 06-Core2|Win32
 		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x64.ActiveCfg = 11-Bulldozer|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x64.Build.0 = 11-Bulldozer|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x86.ActiveCfg = 11-Bulldozer|Win32
 		{50987581-C913-4C4C-8540-A5A35AD06990}.11-Bulldozer|x86.Build.0 = 11-Bulldozer|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-SandyBridge|x64.ActiveCfg = 11-SandyBridge|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-SandyBridge|x64.Build.0 = 11-SandyBridge|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-SandyBridge|x86.ActiveCfg = 11-SandyBridge|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.11-SandyBridge|x86.Build.0 = 11-SandyBridge|Win32
 		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x64.ActiveCfg = 12-Piledriver|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x64.Build.0 = 12-Piledriver|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.12-Piledriver|x86.ActiveCfg = 12-Piledriver|Win32
@@ -39,6 +53,10 @@ Global
 		{50987581-C913-4C4C-8540-A5A35AD06990}.16-KnightsLanding|x64.Build.0 = 16-KnightsLanding|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.16-KnightsLanding|x86.ActiveCfg = 16-KnightsLanding|Win32
 		{50987581-C913-4C4C-8540-A5A35AD06990}.16-KnightsLanding|x86.Build.0 = 16-KnightsLanding|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-SkylakePurley|x64.ActiveCfg = 17-SkylakePurley|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-SkylakePurley|x64.Build.0 = 17-SkylakePurley|x64
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-SkylakePurley|x86.ActiveCfg = 17-SkylakePurley|Win32
+		{50987581-C913-4C4C-8540-A5A35AD06990}.17-SkylakePurley|x86.Build.0 = 17-SkylakePurley|Win32
 		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x64.ActiveCfg = 17-Zen|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x64.Build.0 = 17-Zen|x64
 		{50987581-C913-4C4C-8540-A5A35AD06990}.17-Zen|x86.ActiveCfg = 17-Zen|Win32

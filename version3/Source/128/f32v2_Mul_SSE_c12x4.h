@@ -18,7 +18,7 @@
 #include "../Benchmark.h"
 #include "f64v1_Reduce_SSE2.h"
 
-#if __INTEL_COMPILER && !(defined x64_2016_KnightsLanding) && !(defined x64_2017_Skylake)
+#if __INTEL_COMPILER && !(defined x64_2016_KnightsLanding) && !(defined x64_2017_SkylakePurley)
 #warning "The Intel Compiler does a shit job of optimizing this."
 #endif
 

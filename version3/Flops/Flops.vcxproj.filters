@@ -163,5 +163,11 @@
     <None Include="..\Source\Arch\2016_KnightsLanding.ipp">
       <Filter>Source Files\Arch</Filter>
     </None>
+    <None Include="..\Source\Arch\2011_SandyBridge.ipp">
+      <Filter>Source Files\Arch</Filter>
+    </None>
+    <None Include="..\Source\Arch\2006_Core2.ipp">
+      <Filter>Source Files\Arch</Filter>
+    </None>
   </ItemGroup>
 </Project>
