@@ -20,7 +20,7 @@ namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 inline float reduce(__m128 x){
-    x = _mm_add_ps(x, _mm_unpackhi_ps(x, x));
+    x = _mm_add_ps(x, _mm_shuffle_ps(x, x, 0b00001110));
     x = _mm_add_ps(x, _mm_shuffle_ps(x, x, 1));
     return _mm_cvtss_f32(x);
 }
