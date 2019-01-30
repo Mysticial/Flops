@@ -63,6 +63,8 @@ x64 is strongly recommended, but not required. The benchmark is optimized for 16
 **Linux:**
  1. Run `compile_linux_gcc.sh`.
 
+ For some of the newer architectures (Zen1 and Skylake AVX-512), you'll need at least gcc 6 to compile for those architectures. You can override the C++ compiler by setting the `CXX` environment variable, e.g., by running the build script as `CXX=g++-7 compile_linux_gcc.sh`.
+
 Precompiled binaries can be found in:
  - `binaries-windows/`
  - `binaries-linux/`
