@@ -7,7 +7,8 @@ echo "using CXX = $CXX"
 mkdir -p "binaries-linux" #
 #
 basepath="binaries-linux/" #
-flags="-O2 -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11" #
+flags="-O2 --lpthread -std=c++11" #
+#flags="-O2 -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11" #
 #
 $CXX Source/*.cpp -o "${basepath}2006-Core2"           $flags -march=core2          -D "x64_2006_Core2" #
 $CXX Source/*.cpp -o "${basepath}2011-SandyBridge"     $flags -march=sandybridge    -D "x64_2011_SandyBridge" #
