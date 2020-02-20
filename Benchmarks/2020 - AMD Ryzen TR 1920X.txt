@@ -1,0 +1,137 @@
+AMD Ryzen Threadripper 1920X 12-Core Processor
+for single Core: Frequency = 3718.423 MHz
+for 24 core: Frequency = 3699.545
+
+-----
+
+Running Zen tuned binary with 1 thread...
+
+Single-Precision - 128-bit AVX - Add/Sub
+    GFlops = 29.888
+    Result = 3.80894e+06
+
+Double-Precision - 128-bit AVX - Add/Sub
+    GFlops = 14.944
+    Result = 1.91624e+06
+
+Single-Precision - 128-bit AVX - Multiply
+    GFlops = 30.096
+    Result = 3.83e+06
+
+Double-Precision - 128-bit AVX - Multiply
+    GFlops = 14.976
+    Result = 1.90028e+06
+
+Single-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 38.4
+    Result = 4.06826e+06
+
+Double-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 19.248
+    Result = 2.0479e+06
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 60.288
+    Result = 3.85879e+06
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 30
+    Result = 1.90178e+06
+
+Single-Precision - 256-bit AVX - Add/Sub
+    GFlops = 29.824
+    Result = 3.80189e+06
+
+Double-Precision - 256-bit AVX - Add/Sub
+    GFlops = 14.976
+    Result = 1.90222e+06
+
+Single-Precision - 256-bit AVX - Multiply
+    GFlops = 29.952
+    Result = 3.81888e+06
+
+Double-Precision - 256-bit AVX - Multiply
+    GFlops = 14.928
+    Result = 1.89448e+06
+
+Single-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 58.848
+    Result = 6.27609e+06
+
+Double-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 27.744
+    Result = 2.94674e+06
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 59.712
+    Result = 3.81565e+06
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 29.856
+    Result = 1.90671e+06
+
+Running Zen tuned binary with 24 thread(s)...
+
+Single-Precision - 128-bit AVX - Add/Sub
+    GFlops = 352.576
+    Result = 4.48901e+07
+
+Double-Precision - 128-bit AVX - Add/Sub
+    GFlops = 176.352
+    Result = 2.24733e+07
+
+Single-Precision - 128-bit AVX - Multiply
+    GFlops = 353.376
+    Result = 4.50522e+07
+
+Double-Precision - 128-bit AVX - Multiply
+    GFlops = 176.4
+    Result = 2.24473e+07
+
+Single-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 690.528
+    Result = 7.35044e+07
+
+Double-Precision - 128-bit AVX - Multiply + Add
+    GFlops = 337.896
+    Result = 3.59134e+07
+
+Single-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 707.712
+    Result = 4.50651e+07
+
+Double-Precision - 128-bit FMA3 - Fused Multiply Add
+    GFlops = 352.176
+    Result = 2.24897e+07
+
+Single-Precision - 256-bit AVX - Add/Sub
+    GFlops = 353.664
+    Result = 4.51164e+07
+
+Double-Precision - 256-bit AVX - Add/Sub
+    GFlops = 176.672
+    Result = 2.25817e+07
+
+Single-Precision - 256-bit AVX - Multiply
+    GFlops = 353.952
+    Result = 4.50988e+07
+
+Double-Precision - 256-bit AVX - Multiply
+    GFlops = 175.824
+    Result = 2.24238e+07
+
+Single-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 691.68
+    Result = 7.34713e+07
+
+Double-Precision - 256-bit AVX - Multiply + Add
+    GFlops = 322.176
+    Result = 3.41599e+07
+
+Single-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 707.904
+    Result = 4.51227e+07
+
+Double-Precision - 256-bit FMA3 - Fused Multiply Add
+    GFlops = 353.76
+    Result = 2.25392e+07
