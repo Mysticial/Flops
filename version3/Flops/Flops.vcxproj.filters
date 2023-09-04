@@ -146,6 +146,12 @@
     <ClInclude Include="..\Source\512\f64v3_MulAdd_AVX512_c12u8_c8u12.h">
       <Filter>Source Files\512</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\512\f64v3_AddFMA_AVX512_c12x2_c12x2.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\512\f32v4_AddFMA_AVX512_c12x2_c12x2.h">
+      <Filter>Source Files\512</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Source\Arch\2017_Zen.ipp">

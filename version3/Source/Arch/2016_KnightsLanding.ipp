@@ -40,6 +40,9 @@
 #include "../512/f32v4_FMA_AVX512_c24x4.h"
 #include "../512/f64v3_FMA_AVX512_c24x4.h"
 
+#include "../512/f32v4_AddFMA_AVX512_c12x2_c12x2.h"
+#include "../512/f64v3_AddFMA_AVX512_c12x2_c12x2.h"
+
 namespace Flops{
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -96,6 +99,9 @@ void run(size_t threads){
 
     f32v4_FMA_AVX512_c24x4().run("Single-Precision - 512-bit AVX512 - Fused Multiply Add", threads);
     f64v3_FMA_AVX512_c24x4().run("Double-Precision - 512-bit AVX512 - Fused Multiply Add", threads);
+
+    f32v4_AddFMA_AVX512_c12x2_c12x2().run("Single-Precision - 512-bit AVX512 - FADD + FMA", threads);
+    f64v3_AddFMA_AVX512_c12x2_c12x2().run("Double-Precision - 512-bit AVX512 - FADD + FMA", threads);
 
 	std::cout << std::endl;
 }
